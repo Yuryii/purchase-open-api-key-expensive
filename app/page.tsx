@@ -21,7 +21,7 @@ export default function Home() {
         <ReferralProgram />
         <InstallationGuide />
         <FAQ />
-        <CallToAction />
+        
       </main>
       <Footer />
     </>

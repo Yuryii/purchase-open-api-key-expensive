@@ -101,10 +101,10 @@ export default function Footer() {
                   Vietcombank
                 </p>
                 <p className="text-xs text-secondary-400 mt-1">
-                  STK: 1234567890
+                  STK: 1029723482
                 </p>
                 <p className="text-xs text-secondary-400">
-                  Nguyễn Văn A – Chi nhánh TP.HCM
+                  Lê Tiến Dũng – Chi nhánh TP.HCM
                 </p>
               </div>
               <div className="bg-secondary-800 rounded-xl p-4">
@@ -120,7 +120,7 @@ export default function Footer() {
 
         <div className="border-t border-secondary-800 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-secondary-500 text-sm">
-            © 2024 OpenClaw VN. Tất cả quyền được bảo lưu.
+            © 2026 OpenClaw VN. Tất cả quyền được bảo lưu.
           </p>
           <div className="flex items-center gap-1 text-xs text-secondary-600">
             <span>Made with</span>

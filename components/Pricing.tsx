@@ -100,7 +100,7 @@ export default function Pricing() {
 
               <div className="px-6 lg:px-10 pb-8 pt-6">
                 <a
-                  href="https://routerapi.vovantin.online/"
+                  href="https://zalo.me/g/vtogvm532"
                   className="block w-full text-center bg-primary-600 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 hover:bg-primary-700 shadow-lg shadow-primary-600/25 hover:-translate-y-0.5 active:translate-y-0 text-lg"
                 >
                   Mua ngay

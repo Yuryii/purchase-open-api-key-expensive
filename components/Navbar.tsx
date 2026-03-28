@@ -61,7 +61,7 @@ export default function Navbar() {
 
           <div className="hidden md:block">
             <a
-              href="https://routerapi.vovantin.online/"
+              href="https://zalo.me/g/vtogvm532"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-primary-600 text-white font-semibold px-5 py-2.5 rounded-xl transition-all duration-300 hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-600/25 hover:-translate-y-0.5 active:translate-y-0"
@@ -99,7 +99,7 @@ export default function Navbar() {
           ))}
           <div className="pt-3 border-t border-slate-100">
             <a
-              href="https://routerapi.vovantin.online/"
+              href="https://zalo.me/g/vtogvm532"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}

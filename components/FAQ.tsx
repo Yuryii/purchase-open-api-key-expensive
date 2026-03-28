@@ -28,12 +28,7 @@ const faqs = [
   {
     question: "Tôi có thể nâng cấp gói không?",
     answer:
-      "Hoàn toàn có thể! Bạn có thể nâng cấp gói bất kỳ lúc nào qua Zalo/Telegram. Chênh lệch giá sẽ được tính theo tỷ lệ ngày còn lại trong tháng.",
-  },
-  {
-    question: "Tokens là gì? 1 tháng dùng được bao nhiêu?",
-    answer:
-      "Tokens là đơn vị tính phí cho mỗi câu hỏi/trả lời. 1 token ≈ 0.75 từ tiếng Anh hoặc 1-2 ký tự tiếng Việt. Gói Starter (50K tokens) đủ cho khoảng 1,000-2,000 câu hỏi thông thường. Gói Pro (1M tokens) đủ cho sử dụng liên tục cả tháng.",
+      "Hoàn toàn có thể! Bạn có thể nâng cấp gói bất kỳ lúc nào qua Zalo/Telegram. Chênh lệch giá sẽ được tính theo tỷ lệ ngày còn lại trong tháng. Nhưng gói hiện tại rẻ và xịn nhất thị trường, nếu bạn sử dụng vượt qua cả giới hạn con người bạn có thể liên hệ để nâng cấp.",
   },
   {
     question: "Có cần thẻ tín dụng quốc tế không?",
@@ -43,17 +38,17 @@ const faqs = [
   {
     question: "Thanh toán bằng cách nào?",
     answer:
-      "Chúng tôi hỗ trợ: Chuyển khoản ngân hàng Vietcombank (STK: 123456789 – Nguyễn Văn A), Momo (0901234567), hoặc ZaloPay. Sau khi chuyển khoản, nhắn tin xác nhận qua Zalo để nhận key ngay.",
+      "Chúng tôi hỗ trợ: Chuyển khoản ngân hàng Vietcombank (STK: 10297234821029723482 – Lê Tiến DũngDũng), Momo (0901234567), hoặc ZaloPay. Sau khi chuyển khoản, nhắn tin xác nhận qua Zalo để nhận key ngay.",
   },
   {
     question: "Giới thiệu bạn bè như thế nào?",
     answer:
-      "Rất đơn giản! Đăng nhập tài khoản, lấy link giới thiệu từ trang Tài khoản, chia sẻ cho bạn bè. Mỗi khi có người mua thành công qua link của bạn, bạn được giảm 10% phí mỗi tháng.",
+      "Rất đơn giản! Đăng nhập tài khoản, lấy link giới thiệu từ trang Tài khoản, chia sẻ cho bạn bè. Mỗi khi có người mua thành công qua link của bạn, bạn được giảm 10% phí mỗi tháng. Hoặc liên hệ trực tiếp qua Zalo để được hỗ trợtrợ",
   },
   {
     question: "OpenClaw là gì? Khác gì ChatGPT?",
     answer:
-      "OpenClaw là công cụ giúp bạn truy cập API của OpenAI (công nghệ đằng sau ChatGPT) một cách dễ dàng. Khác với ChatGPT (phải trả phí thuê bao hàng tháng), OpenClaw cho phép bạn trả theo lượng sử dụng thực tế (tokens), linh hoạt và tiết kiệm hơn.",
+      "OpenClaw là AI agent chạy trên máy bạn, có thể đọc file, sửa code và tự chạy task; còn ChatGPT chỉ là chatbot trả lời và gợi ý, không trực tiếp thao tác trên máy, nên OpenClaw mạnh về tự động hóa còn ChatGPT dễ dùng hơn.",
   },
 ];
 
