@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-slate-50 text-slate-600 antialiased;
+  }
+}
+
+@layer components {
+  .section-fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  .section-fade.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-primary-600 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300;
+    @apply hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-600/25 hover:-translate-y-0.5 active:translate-y-0;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 border-2 border-primary-600 text-primary-600 font-semibold px-6 py-3 rounded-xl transition-all duration-300 bg-white;
+    @apply hover:bg-primary-50 hover:border-primary-700 hover:text-primary-700 hover:-translate-y-0.5 active:translate-y-0;
+  }
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-slate-900/10;
+  }
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-600 to-amber-500 bg-clip-text text-transparent;
+  }
+  .gradient-bg {
+    @apply bg-gradient-to-br from-secondary-800 via-secondary-900 to-secondary-950;
+  }
+  .pricing-card-popular {
+    @apply relative border-2 border-primary-500 shadow-xl shadow-primary-500/20 scale-105;
+  }
+}
