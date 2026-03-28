@@ -59,9 +59,7 @@ export default function Hero() {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
                 <a
-                  href="https://routerapi.vovantin.online/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/mua-hang"
                   className="btn-primary text-base px-8 py-4 rounded-xl shadow-lg shadow-primary-600/25"
                 >
                   Mua ngay – 80K

@@ -51,11 +51,11 @@ export default function Pricing() {
                 Bảng giá
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-secondary-800 mb-4">
-                Giá <span className="gradient-text">cố định 80K/tháng</span>
+                Giá chỉ từ <span className="gradient-text">80K/tháng</span>
               </h2>
               <p className="text-lg text-secondary-500 max-w-xl mx-auto">
-                Một gói duy nhất – tất cả tính năng. Không phí ẩn, không chia
-                gói. Giảm 15% cho lần đầu mua!
+                Giá gốc 100K/tháng – Đang giảm 20%. Không phí ẩn, không chia
+                gói.
               </p>
             </div>
           </div>
@@ -68,10 +68,15 @@ export default function Pricing() {
                 <h3 className="text-xl font-bold text-secondary-800 mb-2">
                   {plan.name}
                 </h3>
-                <div className="flex items-center justify-center gap-2 mt-4">
-                  <span className="text-5xl lg:text-6xl font-extrabold text-primary-600">
-                    {plan.price}
-                  </span>
+                <div className="flex items-center justify-center gap-3 mt-4">
+                  <div className="flex items-center gap-2">
+                    <span className="text-3xl lg:text-4xl font-bold text-secondary-400 line-through">
+                      100.000
+                    </span>
+                    <span className="text-5xl lg:text-6xl font-extrabold text-primary-600">
+                      {plan.price}
+                    </span>
+                  </div>
                   <div className="text-left">
                     <span className="text-secondary-400 text-lg font-semibold block">
                       VNĐ
@@ -79,9 +84,14 @@ export default function Pricing() {
                     <span className="text-secondary-400 text-sm">/tháng</span>
                   </div>
                 </div>
-                <span className="inline-block mt-3 bg-accent-100 text-accent-700 text-sm font-bold px-4 py-1.5 rounded-full">
-                  Giảm 15% lần đầu cài đặt
-                </span>
+                <div className="flex items-center justify-center gap-2 mt-3">
+                  <span className="bg-red-100 text-red-600 text-sm font-bold px-3 py-1 rounded-full">
+                    Giảm 20%
+                  </span>
+                  <span className="bg-accent-100 text-accent-700 text-sm font-bold px-4 py-1.5 rounded-full">
+                    Giảm 15% lần đầu cài đặt
+                  </span>
+                </div>
               </div>
 
               <div className="px-6 lg:px-10 pb-2">
@@ -100,7 +110,7 @@ export default function Pricing() {
 
               <div className="px-6 lg:px-10 pb-8 pt-6">
                 <a
-                  href="https://zalo.me/g/vtogvm532"
+                  href="/mua-hang"
                   className="block w-full text-center bg-primary-600 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 hover:bg-primary-700 shadow-lg shadow-primary-600/25 hover:-translate-y-0.5 active:translate-y-0 text-lg"
                 >
                   Mua ngay

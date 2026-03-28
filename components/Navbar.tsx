@@ -1,15 +1,17 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { Menu, X, Zap } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { label: "Tính năng", href: "#features" },
-  { label: "Bảng giá", href: "#pricing" },
+  { label: "Tính năng", href: "/#features" },
   { label: "Blog", href: "/blog" },
-  { label: "Hướng dẫn", href: "#installation" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Hướng dẫn", href: "/#installation" },
+  { label: "FAQ", href: "/#faq" },
+  { label: "Bảng giá", href: "/#pricing" },
+  { label: "Mua hàng", href: "/mua-hang" },
 ];
 
 export default function Navbar() {
@@ -35,7 +37,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <a href="#" className="flex items-center gap-2 group">
+          <Link href="/" className="flex items-center gap-2 group">
             <div className="w-9 h-9 bg-primary-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
               <Zap className="w-5 h-5 text-white" />
             </div>
@@ -45,29 +47,27 @@ export default function Navbar() {
               </span>
               <span className="font-bold text-lg text-primary-600"> VN</span>
             </div>
-          </a>
+          </Link>
 
           <div className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="px-4 py-2 text-sm font-medium text-secondary-600 hover:text-primary-600 transition-colors duration-200 rounded-lg hover:bg-primary-50"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
 
           <div className="hidden md:block">
-            <a
-              href="https://zalo.me/g/vtogvm532"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/mua-hang"
               className="inline-flex items-center gap-2 bg-primary-600 text-white font-semibold px-5 py-2.5 rounded-xl transition-all duration-300 hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-600/25 hover:-translate-y-0.5 active:translate-y-0"
             >
               Mua ngay
-            </a>
+            </Link>
           </div>
 
           <button
@@ -88,25 +88,23 @@ export default function Navbar() {
       >
         <div className="bg-white/95 backdrop-blur-md border-t border-slate-100 px-4 py-4 space-y-1 shadow-lg">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               onClick={() => setIsOpen(false)}
               className="block px-4 py-3 text-sm font-medium text-secondary-600 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors duration-200"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <div className="pt-3 border-t border-slate-100">
-            <a
-              href="https://zalo.me/g/vtogvm532"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/mua-hang"
               onClick={() => setIsOpen(false)}
               className="block text-center bg-primary-600 text-white font-semibold px-5 py-3 rounded-xl transition-all duration-300 hover:bg-primary-700"
             >
               Mua ngay
-            </a>
+            </Link>
           </div>
         </div>
       </div>

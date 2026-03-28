@@ -20,6 +20,7 @@ const footerLinks = [
       { label: "Điều khoản sử dụng", href: "#" },
       { label: "Chính sách hoàn tiền", href: "#" },
       { label: "Chính sách bảo hành", href: "#" },
+      { label: "Chính sách huấn luyện AI", href: "/chinh-sach-huan-luyen-ai" },
     ],
   },
 ];
@@ -101,17 +102,17 @@ export default function Footer() {
                   Vietcombank
                 </p>
                 <p className="text-xs text-secondary-400 mt-1">
-                  STK: 1029723482
+                  STK: 1048465414
                 </p>
                 <p className="text-xs text-secondary-400">
-                  Lê Tiến Dũng – Chi nhánh TP.HCM
+                  Võ Văn Tín – Chi nhánh Biên Hòa
                 </p>
               </div>
               <div className="bg-secondary-800 rounded-xl p-4">
                 <p className="text-xs text-secondary-400 mb-1">Ví điện tử</p>
                 <p className="text-sm font-semibold text-white">Momo</p>
                 <p className="text-xs text-secondary-400">
-                  SĐT: 0901 234 567
+                  SĐT: 0372040759
                 </p>
               </div>
             </div>

@@ -91,7 +91,7 @@ export default function CallToAction() {
           </form>
 
           <a
-            href="https://zalo.me/g/vtogvm532"
+            href="/mua-hang"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white text-primary-600 font-bold px-8 py-4 rounded-xl hover:bg-amber-50 hover:-translate-y-0.5 transition-all duration-300 shadow-xl"

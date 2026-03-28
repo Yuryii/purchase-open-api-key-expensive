@@ -2,24 +2,24 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 import {
-  Code2,
-  BookOpen,
-  Newspaper,
-  Lightbulb,
-  ArrowRight,
+  ArrowLeft,
   Clock,
   Eye,
-  ChevronRight,
+  Calendar,
+  Share2,
+  Facebook,
+  Twitter,
+  Linkedin,
+  CheckCircle,
+  Code2,
+  Lightbulb,
+  Newspaper,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
-
-const categories = [
-  { id: "all", label: "Tất cả", icon: BookOpen },
-  { id: "non-tech", label: "Mọi ngành", icon: Lightbulb },
-  { id: "dev", label: "Lập trình viên", icon: Code2 },
-  { id: "ai-news", label: "Tin tức AI", icon: Newspaper },
-];
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const posts = [
   {
@@ -28,7 +28,6 @@ const posts = [
     category: "non-tech",
     categoryLabel: "Mọi ngành",
     categoryColor: "bg-amber-100 text-amber-700",
-    categoryBg: "bg-amber-50",
     title: "AI là gì? Giải thích đơn giản cho người không biết gì về công nghệ",
     excerpt:
       "Trí tuệ nhân tạo (AI) nghe có vẻ phức tạp nhưng thực ra rất dễ hiểu. Bài viết này sẽ giải thích AI bằng ngôn ngữ của cuộc sống hàng ngày, không cần kiến thức kỹ thuật.",
@@ -36,7 +35,7 @@ const posts = [
     views: 2847,
     date: "20/03/2026",
     featured: true,
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80",
     content: `
       <h2>AI – Trí tuệ nhân tạo là gì?</h2>
       <p>Hãy tưởng tượng bạn có một "trợ lý thông minh" có thể học hỏi từ kinh nghiệm và đưa ra quyết định tốt hơn theo thời gian. Đó chính là AI!</p>
@@ -65,7 +64,6 @@ const posts = [
     category: "non-tech",
     categoryLabel: "Mọi ngành",
     categoryColor: "bg-amber-100 text-amber-700",
-    categoryBg: "bg-amber-50",
     title: "5 cách nhân viên văn phòng tiết kiệm 2 giờ mỗi ngày với AI",
     excerpt:
       "Không cần biết code, nhân viên marketing, kế toán, nhân sự đều có thể dùng GPT để tự động hóa công việc nhàm chán. Cùng xem 5 ví dụ thực tế.",
@@ -73,7 +71,7 @@ const posts = [
     views: 1934,
     date: "18/03/2026",
     featured: false,
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80",
     content: `
       <h2>1. Soạn email trong 30 giây</h2>
       <p>Thay vì ngồi 30 phút suy nghĩ cách diễn đạt, chỉ cần gõ: "Viết email xin nghỉ phép 3 ngày, lý do gia đình có việc bận". GPT sẽ soạn ngay cho bạn, chỉ cần chỉnh sửa vài chỗ.</p>
@@ -97,7 +95,6 @@ const posts = [
     category: "dev",
     categoryLabel: "Lập trình viên",
     categoryColor: "bg-blue-100 text-blue-700",
-    categoryBg: "bg-blue-50",
     title: "OpenClaw là gì? Tại sao developer Việt nên dùng thay vì API OpenAI trực tiếp?",
     excerpt:
       "OpenClaw hoạt động như một proxy giữa ứng dụng của bạn và API OpenAI gốc, tối ưu chi phí và bỏ qua các rào cản thanh toán quốc tế. Chi tiết về kiến trúc và cách sử dụng.",
@@ -105,7 +102,7 @@ const posts = [
     views: 3210,
     date: "15/03/2026",
     featured: false,
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=80",
     content: `
       <h2>Vấn đề khi dùng OpenAI API trực tiếp</h2>
       <p>Nếu bạn từng thử đăng ký OpenAI API, chắc bạn biết:</p>
@@ -145,7 +142,6 @@ const response = await fetch("https://api.openclaw.vn/v1/chat", {
     category: "dev",
     categoryLabel: "Lập trình viên",
     categoryColor: "bg-blue-100 text-blue-700",
-    categoryBg: "bg-blue-50",
     title: "So sánh chi phí: API OpenAI gốc vs OpenClaw – thực sự tiết kiệm bao nhiêu?",
     excerpt:
       "Phân tích chi tiết chi phí thực tế khi sử dụng OpenAI API trực tiếp vs qua OpenClaw, bao gồm cả các hidden cost và thời gian tiết kiệm được.",
@@ -153,7 +149,7 @@ const response = await fetch("https://api.openclaw.vn/v1/chat", {
     views: 1856,
     date: "12/03/2026",
     featured: false,
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80",
     content: `
       <h2>Bảng so sánh chi phí</h2>
       <table>
@@ -180,7 +176,6 @@ const response = await fetch("https://api.openclaw.vn/v1/chat", {
     category: "ai-news",
     categoryLabel: "Tin tức AI",
     categoryColor: "bg-purple-100 text-purple-700",
-    categoryBg: "bg-purple-50",
     title: "GPT-5.4 nano vs GPT-5.4 mini vs GPT-5.4: Nên chọn phiên bản nào?",
     excerpt:
       "OpenAI vừa ra mắt 3 biến thể GPT-5.4: nano, mini và bản đầy đủ. Bài viết phân tích điểm mạnh, điểm yếu và use-case phù hợp của từng phiên bản.",
@@ -188,7 +183,7 @@ const response = await fetch("https://api.openclaw.vn/v1/chat", {
     views: 4102,
     date: "10/03/2026",
     featured: false,
-    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&q=80",
     content: `
       <h2>Tổng quan 3 phiên bản</h2>
       <p>OpenAI giờ cung cấp 3 tier cho GPT-5.4, mỗi tier phù hợp với nhu cầu khác nhau:</p>
@@ -214,7 +209,6 @@ const response = await fetch("https://api.openclaw.vn/v1/chat", {
     category: "ai-news",
     categoryLabel: "Tin tức AI",
     categoryColor: "bg-purple-100 text-purple-700",
-    categoryBg: "bg-purple-50",
     title: "OpenAI ra mắt Codex-5.3: Có gì mới so với phiên bản trước?",
     excerpt:
       "Codex-5.3 là model AI chuyên về lập trình của OpenAI. Phiên bản mới nhất có gì cải thiện? Code nhanh hơn, chính xác hơn, và hỗ trợ nhiều ngôn ngữ hơn.",
@@ -222,7 +216,7 @@ const response = await fetch("https://api.openclaw.vn/v1/chat", {
     views: 2893,
     date: "08/03/2026",
     featured: false,
-    image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1200&q=80",
     content: `
       <h2>Codex là gì?</h2>
       <p>Codex là model AI chuyên biệt cho lập trình, được huấn luyện trên hàng tỷ dòng code. Nó hiểu ngữ cảnh code, có thể đề xuất, viết, và sửa lỗi code cực kỳ hiệu quả.</p>
@@ -247,7 +241,6 @@ const response = await fetch("https://api.openclaw.vn/v1/chat", {
     category: "non-tech",
     categoryLabel: "Mọi ngành",
     categoryColor: "bg-amber-100 text-amber-700",
-    categoryBg: "bg-amber-50",
     title: "Cách nhà quản lý, chủ shop sử dụng AI để tăng doanh số",
     excerpt:
       "Không cần biết code hay công nghệ, chỉ cần biết dùng ChatGPT đúng cách. Hướng dẫn cụ thể cho chủ shop, nhà quản lý muốn tận dụng AI trong kinh doanh.",
@@ -255,7 +248,7 @@ const response = await fetch("https://api.openclaw.vn/v1/chat", {
     views: 2201,
     date: "05/03/2026",
     featured: false,
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80",
     content: `
       <h2>AI giúp gì cho việc kinh doanh?</h2>
       <p>Nhiều chủ shop online, quản lý nghĩ AI chỉ dành cho dân công nghệ. Thực ra, AI có thể giúp <strong>bất kỳ ai</strong> bán hàng hiệu quả hơn.</p>
@@ -267,7 +260,7 @@ const response = await fetch("https://api.openclaw.vn/v1/chat", {
       <p>Gửi 50 bình luận của khách cho GPT và hỏi: "Phân tích 3 vấn đề khách hàng phản ánh nhiều nhất"</p>
 
       <h2>Lên chiến lược khuyến mãi</h2>
-      <p>"Tôi bán giày, tháng 4 muốn chạy flash sale. Gợi ý cơ chế giảm giá, thời gian phù hợp, cách thông báo để tăng đơn"</p>
+      <p>"Tôi bán giày, tháng 4 muốn chạy flash sale. Gợi ý cơ chế giảm giá, thời gian phù hợp, cách thông báo để tăng đơ"</p>
 
       <h2>Training nhân viên</h2>
       <p>"Viết script 5 bước để nhân viên tư vấn khách mua laptop, tập trung vào nhu cầu văn phòng"</p>
@@ -279,7 +272,6 @@ const response = await fetch("https://api.openclaw.vn/v1/chat", {
     category: "dev",
     categoryLabel: "Lập trình viên",
     categoryColor: "bg-blue-100 text-blue-700",
-    categoryBg: "bg-blue-50",
     title: "Hướng dẫn tích hợp OpenClaw API vào ứng dụng React trong 10 phút",
     excerpt:
       "Step-by-step guide để kết nối OpenClaw API vào React app. Bao gồm setup project, gọi API, handle errors, và best practices cho production.",
@@ -287,7 +279,7 @@ const response = await fetch("https://api.openclaw.vn/v1/chat", {
     views: 1654,
     date: "01/03/2026",
     featured: false,
-    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=1200&q=80",
     content: `
       <h2>Prerequisites</h2>
       <ul>
@@ -332,269 +324,217 @@ async function sendMessage(userMessage: string) {
   },
 ];
 
-export default function Blog() {
-  const [activeCategory, setActiveCategory] = useState("all");
+const categoryIcons: Record<string, React.ElementType> = {
+  "non-tech": Lightbulb,
+  dev: Code2,
+  "ai-news": Newspaper,
+};
+
+export default function BlogPost() {
+  const params = useParams();
+  const slug = params.slug as string;
   const [visible, setVisible] = useState(false);
-  const sectionRef = useRef<HTMLDivElement>(null);
+  const [copied, setCopied] = useState(false);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  const post = posts.find((p) => p.slug === slug);
 
   useEffect(() => {
-    const el = sectionRef.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          obs.unobserve(el);
-        }
-      },
-      { threshold: 0.05 }
-    );
-    obs.observe(el);
-    return () => obs.disconnect();
+    setVisible(true);
   }, []);
 
-  const filteredPosts =
-    activeCategory === "all"
-      ? posts
-      : posts.filter((p) => p.category === activeCategory);
+  const handleCopyLink = () => {
+    navigator.clipboard.writeText(window.location.href);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
-  const featuredPost = posts.find((p) => p.featured);
+  const shareOnSocial = (platform: string) => {
+    const url = encodeURIComponent(window.location.href);
+    const title = encodeURIComponent(post?.title || "");
+    const urls: Record<string, string> = {
+      facebook: `https://www.facebook.com/sharer/sharer.php?u=${url}`,
+      twitter: `https://twitter.com/intent/tweet?url=${url}&text=${title}`,
+      linkedin: `https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${title}`,
+    };
+    window.open(urls[platform], "_blank", "width=600,height=400");
+  };
+
+  if (!post) {
+    return (
+      <>
+        <Navbar />
+        <div className="min-h-screen pt-32 pb-20">
+          <div className="max-w-4xl mx-auto px-4 text-center">
+            <h1 className="text-3xl font-bold text-secondary-800 mb-4">
+              Không tìm thấy bài viết
+            </h1>
+            <p className="text-secondary-500 mb-8">
+              Bài viết bạn đang tìm kiếm không tồn tại hoặc đã bị xóa.
+            </p>
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-2 bg-primary-600 text-white font-semibold px-6 py-3 rounded-xl hover:bg-primary-700 transition-colors"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Quay lại trang blog
+            </Link>
+          </div>
+        </div>
+        <Footer />
+      </>
+    );
+  }
+
+  const CategoryIcon = categoryIcons[post.category] || Lightbulb;
 
   return (
-    <div ref={sectionRef}>
-      {/* Hero */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-amber-50" />
-        <div className="absolute top-20 right-0 w-96 h-96 bg-primary-100/50 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-amber-100/50 rounded-full blur-3xl" />
+    <>
+      <Navbar />
+      <article className="min-h-screen pt-24 pb-20">
+        {/* Hero Image */}
+        <div className="relative h-[40vh] min-h-[300px] max-h-[500px]">
+          <img
+            src={post.image}
+            alt={post.title}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10">
+            <div className="max-w-4xl mx-auto">
+              <Link
+                href="/blog"
+                className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors mb-4"
+              >
+                <ArrowLeft className="w-4 h-4" />
+                Quay lại Blog
+              </Link>
+              <span
+                className={cn(
+                  "inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full mb-4",
+                  post.categoryColor
+                )}
+              >
+                <CategoryIcon className="w-3.5 h-3.5" />
+                {post.categoryLabel}
+              </span>
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+                {post.title}
+              </h1>
+            </div>
+          </div>
+        </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Content */}
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Meta */}
+          <div className="py-6 border-b border-slate-200">
+            <div className="flex flex-wrap items-center gap-4 text-sm text-secondary-500">
+              <span className="flex items-center gap-1.5">
+                <Calendar className="w-4 h-4" />
+                {post.date}
+              </span>
+              <span className="flex items-center gap-1.5">
+                <Clock className="w-4 h-4" />
+                {post.readTime}
+              </span>
+              <span className="flex items-center gap-1.5">
+                <Eye className="w-4 h-4" />
+                {post.views.toLocaleString()} lượt đọc
+              </span>
+            </div>
+          </div>
+
+          {/* Excerpt */}
+          <div className="py-8">
+            <p className="text-lg md:text-xl text-secondary-600 leading-relaxed font-medium">
+              {post.excerpt}
+            </p>
+          </div>
+
+          {/* Article Content */}
           <div
+            ref={contentRef}
             className={cn(
-              "text-center transition-all duration-700",
+              "prose prose-lg max-w-none transition-all duration-700",
               visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             )}
-          >
-            <span className="inline-block bg-primary-100 text-primary-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
-              Blog – Tin tức & Hướng dẫn
-            </span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-secondary-800 mb-6">
-              Khám phá thế giới{" "}
-              <span className="gradient-text">AI & OpenClaw</span>
-            </h1>
-            <p className="text-lg text-secondary-500 max-w-2xl mx-auto">
-              Tin tức AI mới nhất, hướng dẫn chi tiết cho developer và bài viết
-              dễ hiểu cho người non-tech. Mọi thứ bạn cần biết về GPT-5.4 &
-              Codex-5.3.
-            </p>
-          </div>
-        </div>
-      </section>
+            dangerouslySetInnerHTML={{ __html: post.content }}
+          />
 
-      {/* Featured Post */}
-      {featuredPost && (
-        <section className="pb-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div
-              className={cn(
-                "section-fade opacity-0 transition-all duration-700",
-                visible && "opacity-100 translate-y-0"
-              )}
-            >
-              <Link href={`/blog/${featuredPost.slug}`} className="block">
-                <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden card-hover">
-                  <div className="grid lg:grid-cols-2">
-                    <div className="relative h-64 lg:h-auto cursor-pointer">
-                      <img
-                        src={featuredPost.image}
-                        alt={featuredPost.title}
-                        className="absolute inset-0 w-full h-full object-cover"
-                      />
-                      <div className="absolute top-4 left-4">
-                        <span className="bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full">
-                          ⭐ Bài viết nổi bật
-                        </span>
-                      </div>
-                    </div>
-                    <div className="p-8 lg:p-10 flex flex-col justify-center">
-                      <div className="flex items-center gap-2 mb-3">
-                        <span
-                          className={cn(
-                            "text-xs font-bold px-3 py-1 rounded-full",
-                            featuredPost.categoryColor
-                          )}
-                        >
-                          {featuredPost.categoryLabel}
-                        </span>
-                        <span className="text-secondary-400 text-xs flex items-center gap-1">
-                          <Clock className="w-3 h-3" />
-                          {featuredPost.readTime}
-                        </span>
-                      </div>
-                      <h2 className="text-2xl lg:text-3xl font-extrabold text-secondary-800 mb-4 leading-tight">
-                        {featuredPost.title}
-                      </h2>
-                      <p className="text-secondary-500 leading-relaxed mb-6">
-                        {featuredPost.excerpt}
-                      </p>
-                      <div className="flex items-center gap-4">
-                        <span className="text-xs text-secondary-400 flex items-center gap-1">
-                          <Eye className="w-3 h-3" />
-                          {featuredPost.views.toLocaleString()} lượt đọc
-                        </span>
-                        <span className="text-secondary-400 text-xs">
-                          {featuredPost.date}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* Category Filter */}
-      <section className="pb-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-center justify-center gap-3">
-            {categories.map((cat) => {
-              const Icon = cat.icon;
-              return (
+          {/* Share */}
+          <div className="mt-12 pt-8 border-t border-slate-200">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div>
+                <h3 className="font-bold text-secondary-800 mb-2 flex items-center gap-2">
+                  <Share2 className="w-4 h-4" />
+                  Chia sẻ bài viết
+                </h3>
+                <p className="text-sm text-secondary-500">
+                  Nếu thấy hữu ích, hãy chia sẻ cho bạn bè!
+                </p>
+              </div>
+              <div className="flex items-center gap-2">
                 <button
-                  key={cat.id}
-                  onClick={() => setActiveCategory(cat.id)}
-                  className={cn(
-                    "flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold text-sm transition-all duration-300",
-                    activeCategory === cat.id
-                      ? "bg-primary-600 text-white shadow-lg shadow-primary-600/25"
-                      : "bg-white text-secondary-600 border border-slate-200 hover:border-primary-300 hover:text-primary-600"
-                  )}
+                  onClick={() => shareOnSocial("facebook")}
+                  className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
                 >
-                  <Icon className="w-4 h-4" />
-                  {cat.label}
+                  <Facebook className="w-4 h-4" />
+                  Facebook
                 </button>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Posts Grid */}
-      <section className="pb-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {filteredPosts
-              .filter((p) => !p.featured || activeCategory !== "all")
-              .map((post, i) => (
-                <Link
-                  key={post.id}
-                  href={`/blog/${post.slug}`}
-                  className={cn(
-                    "section-fade opacity-0 bg-white rounded-2xl border border-slate-200 overflow-hidden card-hover",
-                    visible && "opacity-100 translate-y-0"
-                  )}
-                  style={{
-                    transitionDelay: `${i * 80}ms`,
-                    transition:
-                      "opacity 0.6s ease-out, transform 0.6s ease-out",
-                  }}
+                <button
+                  onClick={() => shareOnSocial("twitter")}
+                  className="flex items-center gap-2 px-4 py-2 bg-sky-500 text-white rounded-lg hover:bg-sky-600 transition-colors"
                 >
-                  <article>
-                    <div className="relative h-48 overflow-hidden">
-                      <img
-                        src={post.image}
-                        alt={post.title}
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute top-3 left-3">
-                        <span
-                          className={cn(
-                            "text-xs font-bold px-3 py-1 rounded-full",
-                            post.categoryColor
-                          )}
-                        >
-                          {post.categoryLabel}
-                        </span>
-                      </div>
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-lg font-bold text-secondary-800 mb-3 leading-snug line-clamp-2 group-hover:text-primary-600">
-                        {post.title}
-                      </h3>
-                      <p className="text-secondary-500 text-sm leading-relaxed mb-4 line-clamp-3">
-                        {post.excerpt}
-                      </p>
-                      <div className="flex items-center justify-between text-xs text-secondary-400">
-                        <span className="flex items-center gap-1">
-                          <Clock className="w-3 h-3" />
-                          {post.readTime}
-                        </span>
-                        <span className="flex items-center gap-1">
-                          <Eye className="w-3 h-3" />
-                          {post.views.toLocaleString()} lượt đọc
-                        </span>
-                        <span>{post.date}</span>
-                      </div>
-                      <div className="mt-4 pt-4 border-t border-slate-100">
-                        <div className="flex items-center gap-3">
-                          <div className="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center">
-                            <span className="text-primary-600 text-xs font-bold">OC</span>
-                          </div>
-                          <span className="text-xs font-semibold text-secondary-600">
-                            Đội ngũ OpenClaw VN
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                </Link>
-              ))}
+                  <Twitter className="w-4 h-4" />
+                  Twitter
+                </button>
+                <button
+                  onClick={() => shareOnSocial("linkedin")}
+                  className="flex items-center gap-2 px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors"
+                >
+                  <Linkedin className="w-4 h-4" />
+                  LinkedIn
+                </button>
+                <button
+                  onClick={handleCopyLink}
+                  className="flex items-center gap-2 px-4 py-2 bg-slate-100 text-secondary-700 rounded-lg hover:bg-slate-200 transition-colors"
+                >
+                  {copied ? (
+                    <>
+                      <CheckCircle className="w-4 h-4 text-green-600" />
+                      <span className="text-green-600">Đã copy!</span>
+                    </>
+                  ) : (
+                    <>
+                      <Share2 className="w-4 h-4" />
+                      Copy link
+                    </>
+                  )}
+                </button>
+              </div>
+            </div>
           </div>
 
-          {filteredPosts.length === 0 && (
-            <div className="text-center py-20">
-              <p className="text-secondary-400 text-lg">
-                Không có bài viết nào trong danh mục này.
-              </p>
-            </div>
-          )}
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="pb-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-primary-600 to-primary-700 rounded-2xl p-10 lg:p-14 text-center">
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-white mb-4">
-              Bạn đã sẵn sàng trải nghiệm GPT-5.4?
-            </h2>
-            <p className="text-white/80 mb-8 max-w-lg mx-auto">
-              Mua API key OpenClaw ngay hôm nay – chỉ 80K/tháng, hỗ trợ cài
-              đặt miễn phí, thanh toán VNĐ.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://routerapi.vovantin.online/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-white text-primary-600 font-bold px-8 py-4 rounded-xl hover:bg-amber-50 hover:-translate-y-0.5 transition-all duration-300 shadow-xl"
-              >
-                Mua API Key ngay
-                <ArrowRight className="w-5 h-5" />
-              </a>
-              <a
-                href="/"
-                className="inline-flex items-center justify-center gap-2 border-2 border-white/40 text-white font-semibold px-8 py-4 rounded-xl hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-300"
-              >
-                Quay lại trang chủ
-                <ChevronRight className="w-5 h-5" />
-              </a>
+          {/* Author */}
+          <div className="mt-8 p-6 bg-slate-50 rounded-xl">
+            <div className="flex items-center gap-4">
+              <div className="w-14 h-14 bg-primary-100 rounded-full flex items-center justify-center">
+                <span className="text-primary-600 text-xl font-bold">OC</span>
+              </div>
+              <div>
+                <h4 className="font-bold text-secondary-800">
+                  Đội ngũ OpenClaw VN
+                </h4>
+                <p className="text-sm text-secondary-500">
+                  Chuyên gia về AI & API, hỗ trợ 24/7
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </article>
+      <Footer />
+    </>
   );
 }
