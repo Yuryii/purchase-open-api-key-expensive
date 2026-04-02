@@ -322,6 +322,585 @@ async function sendMessage(userMessage: string) {
 }</code></pre>
     `,
   },
+  {
+    id: 9,
+    slug: "key-gpt-54-gia-80k-thang-chi-bang-2-ly-cafe",
+    category: "ai-news",
+    categoryLabel: "Tin tức AI",
+    categoryColor: "bg-purple-100 text-purple-700",
+    categoryBg: "bg-purple-50",
+    title: "Key GPT-5.4 chỉ 80K/tháng – Chỉ bằng 2 ly cà phê, bạn có cả tháng AI không giới hạn",
+    excerpt:
+      "Trong khi nhiều người Việt phải chi 500-800K mỗi tháng cho thẻ Visa để dùng OpenAI, giờ đây chỉ cần 80K VND là bạn có đầy đủ GPT-5.4, Codex, và hỗ trợ tiếng Việt 24/7. Sự thật đằng sau con số này.",
+    readTime: "6 phút",
+    views: 5623,
+    date: "25/03/2026",
+    featured: false,
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=1200&q=80",
+    content: `
+      <h2>Tại sao người Việt thường tốn 500-800K/tháng để dùng AI?</h2>
+      <p>Nếu bạn từng thử đăng ký ChatGPT Plus hoặc OpenAI API, chắc bạn đã gặp những rào cản sau:</p>
+      <ul>
+        <li><strong>Thẻ Visa quốc tế:</strong> Phí phát hành $25-50 (khoảng 600K-1.2M VND), phí duy trì hàng năm</li>
+        <li><strong>Tỷ giá USD/VND:</strong> Thêm 3-5% phí chuyển đổi mỗi khi nạp tiền</li>
+        <li><strong>Không hỗ trợ tiếng Việt:</strong> Khi gặp lỗi, phải liên hệ hỗ trợ bằng tiếng Anh</li>
+        <li><strong>Tài khoản bị khóa:</strong> Nhiều IP từ Việt Nam bị đánh dấu, tài khoản có thể bị suspended bất kỳ lúc nào</li>
+      </ul>
+      <p>Kết quả: Mỗi tháng bạn có thể tốn <strong>500K - 800K VND</strong> chỉ để duy trì quyền truy cập, chưa kể chi phí sử dụng thực tế.</p>
+
+      <h2>Giải pháp: Key GPT-5.4 chỉ 80K/tháng</h2>
+      <p>OpenClaw VN cung cấp API key GPT-5.4 với mức giá <strong>chỉ 80,000 VND/tháng</strong>. Đây là cách nó hoạt động:</p>
+      <table>
+        <tr><th>Tiêu chí</th><th>OpenAI gốc</th><th>OpenClaw VN</th></tr>
+        <tr><td>Chi phí hàng tháng</td><td>500K - 800K VND</td><td><strong>80K VND</strong></td></tr>
+        <tr><td>Phí thẻ Visa</td><td>600K-1.2M VND/năm</td><td>Không cần</td></tr>
+        <tr><td>Phí chuyển đổi USD</td><td>3-5% mỗi lần</td><td>0%</td></tr>
+        <tr><td>Thanh toán</td><td>Visa/MasterCard</td><td>Chuyển khoản, Momo, Zalo</td></tr>
+        <tr><td>Hỗ trợ</td><td>Tiếng Anh, email</td><td>Tiếng Việt, Zalo 24/7</td></tr>
+      </table>
+      <p><strong>Tiết kiệm: ~600-700K mỗi tháng = 7-8 triệu/năm</strong></p>
+
+      <h2>80K/tháng thì dùng được gì?</h2>
+      <p>Với 80K/tháng, bạn nhận được:</p>
+      <ul>
+        <li><strong>GPT-5.4 không giới hạn</strong> – Model mới nhất, mạnh nhất của OpenAI</li>
+        <li><strong>Codex-5.3</strong> – Hỗ trợ lập trình 50+ ngôn ngữ</li>
+        <li><strong>3 phiên bản GPT-5.4</strong> – nano, mini, full – tự chọn phù hợp task</li>
+        <li><strong>API endpoint</strong> – Tích hợp được vào app, website, chatbot</li>
+        <li><strong>Dashboard quản lý</strong> – Theo dõi usage, chi phí theo thời gian thực</li>
+      </ul>
+
+      <h2>So sánh chi phí thực tế</h2>
+      <p>Ví dụ: Ứng dụng chatbot của bạn phục vụ 1,000 khách hàng/ngày, mỗi khách hỏi 5 câu:</p>
+      <ul>
+        <li><strong>OpenAI gốc:</strong> 1,000 × 5 × 30 = 150,000 câu hỏi/tháng × 50 tokens = 7.5M tokens → <strong>$75 (~1.8M VND)</strong> + phí Visa + phí USD = <strong>2-3M/tháng</strong></li>
+        <li><strong>OpenClaw VN:</strong> Cùng lượng usage = <strong>80K/tháng</strong> (có thể nâng cấp gói cao hơn nếu cần)</li>
+      </ul>
+      <p><em>Tiết kiệm: ~2-3 triệu/tháng cho một ứng dụng vừa và nhỏ</em></p>
+
+      <h2>Ai nên mua key GPT-5.4 giá rẻ này?</h2>
+      <ul>
+        <li><strong>Developer/System admin</strong> – Cần tích hợp AI vào sản phẩm, không muốn lo chuyện thanh toán quốc tế</li>
+        <li><strong>Chủ shop/Doanh nghiệp nhỏ</strong> – Dùng chatbot AI để tư vấn khách 24/7</li>
+        <li><strong>Freelancer</strong> – Dùng GPT viết content, dịch thuật, phân tích dữ liệu</li>
+        <li><strong>Học sinh/Sinh viên</strong> – Hỗ trợ học tập, nghiên cứu với chi phí cực thấp</li>
+        <li><strong>Agency/Marketing team</strong> – Cần nhiều API key cho nhiều dự án</li>
+      </ul>
+
+      <h2>Cách mua đơn giản nhất</h2>
+      <p>Bạn chỉ cần:</p>
+      <ol>
+        <li>Liên hệ qua Zalo: <strong>0xxx xxx xxx</strong> (xem trang Mua hàng)</li>
+        <li>Chuyển khoản 80K qua Momo hoặc ngân hàng</li>
+        <li>Nhận API key qua Zalo trong vòng 5 phút</li>
+        <li>Cài đặt và bắt đầu sử dụng ngay</li>
+      </ol>
+      <p><strong>Không cần thẻ Visa. Không cần VPN. Không cần tài khoản quốc tế. Chỉ cần 80K và Zalo.</strong></p>
+    `,
+  },
+  {
+    id: 10,
+    slug: "tong-hop-cac-goi-gia-gpt-54-api-openclaw-2026",
+    category: "ai-news",
+    categoryLabel: "Tin tức AI",
+    categoryColor: "bg-purple-100 text-purple-700",
+    categoryBg: "bg-purple-50",
+    title: "Tổng hợp các gói GPT-5.4 API OpenClaw 2026: Bảng giá chi tiết & so sánh",
+    excerpt:
+      "Bảng giá đầy đủ các gói API GPT-5.4 của OpenClaw VN năm 2026. Từ gói Starter 80K cho đến gói Enterprise không giới hạn. Biết chính xác mình cần gói nào.",
+    readTime: "5 phút",
+    views: 3841,
+    date: "22/03/2026",
+    featured: false,
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80",
+    content: `
+      <h2>Tại sao cần biết bảng giá chi tiết?</h2>
+      <p>Nhiều người mua API key nhưng không biết mình đang trả quá nhiều so với nhu cầu thực tế. Ngược lại, nhiều người mua gói rẻ nhưng lại thiếu capacity khi ứng dụng phát triển.</p>
+      <p>Bài viết này giúp bạn <strong>chọn đúng gói</strong> cho nhu cầu của mình.</p>
+
+      <h2>Bảng giá các gói GPT-5.4 API OpenClaw 2026</h2>
+      <table>
+        <tr><th>Gói</th><th>Giá/tháng</th><th>GPT-5.4 nano</th><th>GPT-5.4 mini</th><th>GPT-5.4 full</th><th>Codex-5.3</th></tr>
+        <tr><td><strong>Starter</strong></td><td>80K VND</td><td>Không giới hạn</td><td>50K requests</td><td>5K requests</td><td>10K requests</td></tr>
+        <tr><td><strong>Pro</strong></td><td>200K VND</td><td>Không giới hạn</td><td>200K requests</td><td>20K requests</td><td>50K requests</td></tr>
+        <tr><td><strong>Business</strong></td><td>500K VND</td><td>Không giới hạn</td><td>Không giới hạn</td><td>100K requests</td><td>200K requests</td></tr>
+        <tr><td><strong>Enterprise</strong></td><td>Liên hệ</td><td>Không giới hạn</td><td>Không giới hạn</td><td>Không giới hạn</td><td>Không giới hạn</td></tr>
+      </table>
+
+      <h2>Nên chọn gói nào?</h2>
+
+      <h3>Gói Starter – 80K/tháng – Phù hợp: Cá nhân, học tập</h3>
+      <p>Bạn mới bắt đầu, muốn trải nghiệm GPT-5.4 hoặc dùng cho nhu cầu cá nhân:</p>
+      <ul>
+        <li>Học sinh/sinh viên – Viết essay, dịch thuật, hỗ trợ học tập</li>
+        <li>Freelancer – Viết content, dịch thuật cho 1-2 khách hàng</li>
+        <li>Test ứng dụng – Thử nghiệm prototype trước khi scale</li>
+      </ul>
+
+      <h3>Gói Pro – 200K/tháng – Phù hợp: Developer, Shop nhỏ</h3>
+      <p>Bạn đã có sản phẩm, cần AI cho production:</p>
+      <ul>
+        <li>Chatbot cho website – Tư vấn khách tự động 24/7</li>
+        <li>App di động – Tích hợp AI vào ứng dụng</li>
+        <li>Shop online – Tự động trả lời tin nhắn, đề xuất sản phẩm</li>
+        <li>Agency – Phục vụ 3-5 dự án cùng lúc</li>
+      </ul>
+
+      <h3>Gói Business – 500K/tháng – Phù hợp: Doanh nghiệp, Team</h3>
+      <p>Doanh nghiệp cần AI cho nhiều bộ phận, nhiều sản phẩm:</p>
+      <ul>
+        <li>Marketing team – Viết content, phân tích chiến dịch</li>
+        <li>Customer service – Chatbot phục vụ hàng nghìn khách/ngày</li>
+        <li>Product team – Tích hợp AI vào nhiều tính năng</li>
+        <li>Data team – Phân tích dữ liệu, báo cáo tự động</li>
+      </ul>
+
+      <h2>So sánh với chi phí không dùng OpenClaw</h2>
+      <p>Để so sánh công bằng, hãy xem chi phí thực tế khi dùng OpenAI trực tiếp:</p>
+      <ul>
+        <li><strong>Thẻ Visa quốc tế:</strong> ~800K-1.5M VND/năm (phí phát hành + duy trì)</li>
+        <li><strong>GPT-5.4 API usage:</strong> ~$50-200/tháng tùy usage = 1.2M-5M VND/tháng</li>
+        <li><strong>Tổng năm:</strong> ~15M-60M VND cho một ứng dụng vừa</li>
+      </ul>
+      <p>Với <strong>OpenClaw Pro (200K/tháng = 2.4M/năm)</strong>, bạn tiết kiệm được <strong>80-95% chi phí</strong>.</p>
+
+      <h2>FAQ thường gặp</h2>
+      <p><strong>Hỏi: Gói Starter 80K có đủ cho ứng dụng production không?</strong></p>
+      <p>Trả: Đủ cho ứng dụng nhỏ, prototype, hoặc dùng cá nhân. Nếu ứng dụng phát triển, bạn có thể nâng cấp lên Pro hoặc Business bất kỳ lúc nào.</p>
+
+      <p><strong>Hỏi: Có giới hạn số API key không?</strong></p>
+      <p>Trả: Mỗi gói được cấp 1 API key chính. Bạn có thể yêu cầu thêm key cho các dự án khác nhau.</p>
+
+      <p><strong>Hỏi: Nếu hết quota thì sao?</strong></p>
+      <p>Trả: Bạn có thể mua thêm top-up hoặc nâng cấp gói. Không bị khóa tài khoản đột ngột.</p>
+    `,
+  },
+  {
+    id: 11,
+    slug: "key-gpt-54-cho-shop-ban-hang-chatbot-tu-van-khach-hang",
+    category: "non-tech",
+    categoryLabel: "Mọi ngành",
+    categoryColor: "bg-amber-100 text-amber-700",
+    categoryBg: "bg-amber-50",
+    title: "Key GPT-5.4 cho shop bán hàng: Chatbot tư vấn khách 24/7 chỉ với 80K/tháng",
+    excerpt:
+      "Bạn bán hàng online, mệt mỏi với việc trả lời tin nhắn lúc đêm khuya? GPT-5.4 API giá 80K/tháng có thể thay bạn tư vấn khách 24/7. Cách setup đơn giản không cần biết code.",
+    readTime: "7 phút",
+    views: 2956,
+    date: "20/03/2026",
+    featured: false,
+    image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1200&q=80",
+    content: `
+      <h2>Vấn đề của shop bán hàng online</h2>
+      <p>Nếu bạn bán hàng trên Facebook, Zalo, hoặc website, chắc bạn đã gặp những tình huống này:</p>
+      <ul>
+        <li>Khách hỏi lúc 11 giờ đêm – Bạn đang ngủ</li>
+        <li>Cùng một câu hỏi "còn hàng không?" được hỏi 50 lần/ngày</li>
+        <li>Khách muốn biết size, màu, so sánh sản phẩm – Bạn phải tra rất lâu</li>
+        <li>Bỏ lỡ khách vì không kịp trả lời</li>
+        <li>Tuyển nhân viên tư vấn thì tốn thêm 5-10M/tháng</li>
+      </ul>
+
+      <h2>Giải pháp: Chatbot AI từ key GPT-5.4</h2>
+      <p>Thay vì trả lời từng tin nhắn, để GPT-5.4 làm việc đó cho bạn. Chatbot AI có thể:</p>
+      <ul>
+        <li><strong>Trả lời 24/7</strong> – Không cần nhân viên ca đêm</li>
+        <li><strong>Trả lời nhanh</strong> – Khách hỏi là có ngay, không để khách chờ</li>
+        <li><strong>Trả lời chính xác</strong> – GPT-5.4 hiểu ngữ cảnh, không trả lời sai thông tin sản phẩm</li>
+        <li><strong>Tư vấn sản phẩm</strong> – Hỏi nhu cầu, gợi ý sản phẩm phù hợp</li>
+        <li><strong>Xử lý khiếu nại</strong> – Trả lời chính sách đổi trả, bảo hành</li>
+      </ul>
+
+      <h2>Chi phí cực kỳ rẻ</h2>
+      <p>Với key GPT-5.4 giá <strong>80K/tháng</strong> từ OpenClaw VN:</p>
+      <table>
+        <tr><th>Tiêu chí</th><th>Tuyển nhân viên</th><th>GPT-5.4 Chatbot</th></tr>
+        <tr><td>Lương/tháng</td><td>5-8M VND</td><td>80K VND</td></tr>
+        <tr><td>Thời gian làm việc</td><td>8-10 giờ/ngày</td><td>24/7</td></tr>
+        <tr><td>Số khách tư vấn/ngày</td><td>20-30</td><td>Không giới hạn</td></tr>
+        <tr><td>Nghỉ phép, thôi việc</td><td>Có thể</td><td>Không bao giờ</td></tr>
+        <tr><td>Tốc độ phản hồi</td><td>5-30 phút</td><td>Tức thì</td></tr>
+        <tr><td>Chi phí 1 năm</td><td>60-100M</td><td><strong>~960K</strong></td></tr>
+      </table>
+      <p><strong>Tiết kiệm: ~60-100 triệu/năm</strong> so với tuyển nhân viên tư vấn.</p>
+
+      <h2>Cách setup chatbot không cần biết code</h2>
+      <p>Bạn có 2 lựa chọn đơn giản:</p>
+
+      <h3>Option 1: Kết nối với Fanpage/Zalo (không cần code)</h3>
+      <p>Nhiều nền tảng chatbot như Chatfuel, Manychat, hoặc giải pháp Việt Nam như Subiz, Base đã tích hợp OpenClaw API:</p>
+      <ol>
+        <li>Mua key GPT-5.4 tại OpenClaw VN (80K/tháng)</li>
+        <li>Đăng ký tài khoản trên nền tảng chatbot (có gói miễn phí)</li>
+        <li>Kết nối Fanpage/Zalo với nền tảng chatbot</li>
+        <li>Cấu hình OpenClaw API key vào nền tảng</li>
+        <li>Train chatbot với thông tin sản phẩm của bạn (chỉ cần copy/paste)</li>
+        <li>Bật chatbot – Từ nay khách hỏi là có người trả lời!</li>
+      </ol>
+
+      <h3>Option 2: Chatbot trên website (cần 1 chút code hoặc nhờ developer)</h3>
+      <p>Nếu bạn có website bán hàng riêng:</p>
+      <pre><code>// Kết nối OpenClaw API với widget chat trên website
+// Chỉ cần thay YOUR_API_KEY bằng key đã mua
+
+const response = await fetch('https://api.openclaw.vn/v1/chat/completions', {
+  method: 'POST',
+  headers: {
+    'Authorization': 'Bearer YOUR_API_KEY',
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    model: 'gpt-5.4',
+    messages: [
+      { role: 'system', content: 'Bạn là nhân viên tư vấn cho shop thời trang ABC...' },
+      { role: 'user', content: customerMessage }
+    ]
+  })
+});</code></pre>
+
+      <h2>Ví dụ kịch bản chatbot cho shop thời trang</h2>
+      <p><strong>Khách:</strong> "Còn áo phông màu đen size L không?"</p>
+      <p><strong>Chatbot (GPT-5.4):</strong> "Dạ chào anh/chị! Áo phông màu đen size L của bên em vẫn còn ạ. Giá là 299K, có 2 loại: cotton 100% và cotton pha. Anh/chị thường mặc size nào để em tư vấn chuẩn hơn ạ?"</p>
+      <p><strong>Khách:</strong> "Tôi muốn đổi size vì mua nhầm"</p>
+      <p><strong>Chatbot (GPT-5.4):</strong> "Dạ không sao ạ! Để đổi size, anh/chị vui lòng gửi ảnh sản phẩm và mã đơn hàng qua Zalo này. Bên em sẽ hỗ trợ đổi size trong vòng 24 giờ, khách hàng chỉ cần trả phí ship 15K cho chiều về ạ."</p>
+
+      <h2>FAQ cho chủ shop</h2>
+      <p><strong>Hỏi: Chatbot có trả lời sai thông tin sản phẩm không?</strong></p>
+      <p>Trả: Bạn nên cung cấp thông tin sản phẩm cho chatbot (giá, size, màu, tồn kho). GPT-5.4 sẽ chỉ trả lời dựa trên thông tin bạn cung cấp. Nếu không biết, nó sẽ nói "em đang kiểm tra" thay vì bịa đặt.</p>
+
+      <p><strong>Hỏi: Khách hàng có biết đang chat với AI không?</strong></p>
+      <p>Trả: Bạn nên để chatbot xưng "em" như nhân viên thật. Khách hàng hiếm khi nhận ra. Nếu muốn minh bạch, có thể để tin đầu: "Dạ em là trợ lý AI của shop ABC ạ 😊"</p>
+
+      <p><strong>Hỏi: 80K/tháng thì chatbot trả lời được bao nhiêu khách?</strong></p>
+      <p>Trả: 80K/tháng đủ cho khoảng 1,000-2,000 câu hỏi từ khách. Nếu shop lớn hơn, nâng lên gói Pro (200K/tháng) là đủ.</p>
+    `,
+  },
+  {
+    id: 12,
+    slug: "key-gpt-54-cho-giao-vien-sinh-vien-giang-vien",
+    category: "non-tech",
+    categoryLabel: "Mọi ngành",
+    categoryColor: "bg-amber-100 text-amber-700",
+    categoryBg: "bg-amber-50",
+    title: "Key GPT-5.4 cho giáo viên, sinh viên, giảng viên: Công cụ hỗ trợ giảng dạy và học tập với chi phí sinh viên",
+    excerpt:
+      "GPT-5.4 có thể giúp giáo viên soạn giáo án nhanh hơn, sinh viên viết bài tốt hơn, giảng viên nghiên cứu hiệu quả hơn. Tất cả với chi phí chỉ 80K/tháng – phù hợp với túi tiền sinh viên.",
+    readTime: "8 phút",
+    views: 2156,
+    date: "18/03/2026",
+    featured: false,
+    image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1200&q=80",
+    content: `
+      <h2>Tại sao AI hữu ích cho giáo dục?</h2>
+      <p>Không phải AI thay thế giáo viên, mà AI là "trợ lý" giúp công việc nhanh hơn, hiệu quả hơn. Giáo viên tiết kiệm thời gian, sinh viên học tốt hơn.</p>
+
+      <h2>Cho giáo viên & giảng viên</h2>
+
+      <h3>Soạn giáo án trong 10 phút</h3>
+      <p>Thay vì ngồi viết giáo án 2-3 tiếng, chỉ cần:</p>
+      <ul>
+        <li>"Soạn giáo án 45 phút cho bài Tích phân từng phần, lớp 12, học sinh trung bình"</li>
+        <li>"Tạo 10 câu hỏi trắc nghiệm về chủ đề Hóa hữu cơ lớp 11, mức độ khó trung bình"</li>
+        <li>"Viết rubric đánh giá bài luận tiếng Anh B1 cho sinh viên năm nhất"</li>
+      </ul>
+      <p><strong>Tiết kiệm: 2-3 tiếng/giáo án × 5 giáo án/tuần = 10-15 tiếng/tuần</strong></p>
+
+      <h3>Tạo đề kiểm tra đa dạng</h3>
+      <p>GPT-5.4 có thể tạo:</p>
+      <ul>
+        <li>Đề trắc nghiệm với đáp án và giải thích</li>
+        <li>Đề tự luận với tiêu chí chấm điểm</li>
+        <li>Bài tập thực hành theo từng mức độ</li>
+        <li>Ngân hàng câu hỏi để xoay đề</li>
+      </ul>
+
+      <h3>Hỗ trợ nghiên cứu khoa học</h3>
+      <p>"Tóm tắt 5 xu hướng nghiên cứu mới nhất về STEM trong giáo dục phổ thông"</p>
+      <p>"Gợi ý phương pháp nghiên cứu phù hợp cho đề tài về ứng dụng AI trong dạy học"</p>
+
+      <h2>Cho sinh viên</h2>
+
+      <h3>Viết luận văn, tiểu luận</h3>
+      <p>GPT-5.4 KHÔNG viết thay bạn, nhưng có thể:</p>
+      <ul>
+        <li>"Gợi ý cấu trúc bài luận về tác động của mạng xã hội đến thanh thiếu niên"</li>
+        <li>"Viết đoạn mở bài cho chủ đề: Thực trạng ô nhiễm môi trường tại Việt Nam"</li>
+        <li>"Kiểm tra logic và luận điểm trong bài luận của tôi"</li>
+        <li>"Dịch và paraphrasing một đoạn văn sang tiếng Anh học thuật"</li>
+      </ul>
+
+      <h3>Học ngoại ngữ</h3>
+      <ul>
+        <li>"Trả lời bằng tiếng Anh về chủ đề Climate Change, dùng từ vựng trình độ B2"</li>
+        <li>"Giải thích nghĩa của idiom 'the ball is in your court' và cho ví dụ"</li>
+        <li>"Sửa lỗi ngữ pháp trong đoạn văn sau và giải thích"</li>
+        <li>"Dịch bài báo khoa học này sang tiếng Việt, giữ nguyên thuật ngữ"</li>
+      </ul>
+
+      <h3>Giải bài tập & ôn thi</h3>
+      <p>"Giải thích cách giải bài toán xác suất này từng bước"</p>
+      <p>"Tạo 20 câu ôn tập môn Kinh tế chính trị, có đáp án"</p>
+      <p>"Đặt câu hỏi phỏng vấn cho chủ đề: Quyền con người trong luật quốc tế"</p>
+
+      <h3>Nghiên cứu & đọc tài liệu</h3>
+      <p>"Tóm tắt nội dung chính của bài báo này trong 5 câu"</p>
+      <p>"So sánh 2 lý thuyết kinh tế: Keynes và Marx"</p>
+      <p>"Tìm 5 nguồn tham khảo uy tín về Machine Learning trong y khoa"</p>
+
+      <h2>Chi phí cho sinh viên</h2>
+      <p>Với <strong>80K/tháng</strong>, sinh viên có:</p>
+      <ul>
+        <li>GPT-5.4 không giới hạn – Hỏi bao nhiêu tùy ý</li>
+        <li>Codex-5.3 – Hỗ trợ code cho các môn lập trình</li>
+        <li>Tất cả tính năng của bản Pro – Chỉ với giá Starter</li>
+      </ul>
+      <p>So với việc mua tài liệu, thuê gia sư (200-500K/buổi), <strong>80K/tháng là mức giá "sinh viên" nhất</strong> để tiếp cận AI.</p>
+
+      <h2>Cách bắt đầu</h2>
+      <ol>
+        <li>Liên hệ Zalo để mua key (báo là sinh viên để được tư vấn gói phù hợp)</li>
+        <li>Chuyển khoản 80K</li>
+        <li>Nhận API key qua Zalo trong 5 phút</li>
+        <li>Truy cập dashboard để bắt đầu sử dụng</li>
+        <li>Có thể dùng trên điện thoại qua Zalo chatbot hoặc website</li>
+      </ol>
+
+      <h2>Lưu ý quan trọng</h2>
+      <p><strong>AI là công cụ hỗ trợ, không phải thay thế học tập.</strong></p>
+      <ul>
+        <li>Dùng AI để hiểu bài, không phải để chép bài</li>
+        <li>Luôn kiểm tra thông tin AI cung cấp</li>
+        <li>Trích dẫn nguồn khi sử dụng thông tin từ AI</li>
+        <li>Học cách đặt câu hỏi tốt – đây là kỹ năng quan trọng</li>
+      </ul>
+    `,
+  },
+  {
+    id: 13,
+    slug: "key-gpt-54-cho-marketing-content-creator",
+    category: "non-tech",
+    categoryLabel: "Mọi ngành",
+    categoryColor: "bg-amber-100 text-amber-700",
+    categoryBg: "bg-amber-50",
+    title: "Key GPT-5.4 cho Marketing & Content Creator: Viết content viral với chi phí 80K/tháng",
+    excerpt:
+      "Marketer và content creator có thể dùng GPT-5.4 để viết caption, lên ý tưởng, phân tích data trong vài giây. Hướng dẫn chi tiết cách sử dụng GPT-5.4 cho công việc marketing hiệu quả nhất.",
+    readTime: "9 phút",
+    views: 3412,
+    date: "15/03/2026",
+    featured: false,
+    image: "https://images.unsplash.com/photo-1542744094-3a31f272c490?w=1200&q=80",
+    content: `
+      <h2>AI đang thay đổi cách làm marketing như thế nào?</h2>
+      <p>Những content creator, marketer giỏi nhất không phải người viết nhanh nhất – mà là người dùng AI giỏi nhất. Họ dùng GPT-5.4 để:</p>
+      <ul>
+        <li>Tạo 10 ý tưởng content trong 1 phút thay vì ngồi brainstorm 1 tiếng</li>
+        <li>Viết 20 caption đa dạng để A/B test trong 10 phút</li>
+        <li>Phân tích phản hồi khách hàng từ 500 bình luận chỉ trong 5 phút</li>
+        <li>Tạo kịch bản quảng cáo cho nhiều nền tảng (Facebook, TikTok, Zalo)</li>
+      </ul>
+
+      <h2>Các prompt marketing hiệu quả với GPT-5.4</h2>
+
+      <h3>1. Tạo ý tưởng content</h3>
+      <pre><code>Viết 15 ý tưởng content cho Fanpage bán thời trang nam,
+mỗi ý bao gồm: tiêu đề, mô tả ngắn 2-3 câu, hashtag gợi ý.
+Phân chia theo các nhóm: giáo dục (30%), giải trí (30%), bán hàng (40%).
+Tone giọng: trẻ trung, gần gũi, có personality.</code></pre>
+
+      <h3>2. Viết caption đa dạng</h3>
+      <pre><code>Viết 5 biến thể caption cho bài post bán váy cưới:
+- Biến thể 1: Tone cảm xúc, storytelling về cô dâu
+- Biến thể 2: Tone xa hoa, tập trung vào chất lượng
+- Biến thể 3: Tone FOMO (sợ bỏ lỡ), giới hạn thời gian
+- Biến thể 4: Tone thân thiện, review từ khách cũ
+- Biến thể 5: Tone kể chuyện (behind the scenes)
+Mỗi caption 150-200 từ, có CTA rõ ràng.</code></pre>
+
+      <h3>3. Phân tích phản hồi khách</h3>
+      <pre><code>Đây là 50 bình luận từ khách hàng về sản phẩm kem chống nắng của shop:
+[bấm paste 50 bình luận vào đây]
+
+Hãy phân tích:
+1. 3 vấn đề khách hàng phản ánh nhiều nhất
+2. 3 điều khách hàng thích nhất
+3. 5 insight để cải thiện sản phẩm/dịch vụ
+4. Gợi ý 5 cách phản hồi khách trên Fanpage</code></pre>
+
+      <h3>4. Kịch bản quảng cáo</h3>
+      <pre><code>Viết kịch bản quảng cáo Facebook 30 giây cho sản phẩm
+máy xay sinh tố cao cấp, giá 1.5M:
+- Hook (3 giây đầu): gây chú ý
+- Problem (10 giây): vấn đề khi không có máy xay tốt
+- Solution (10 giây): giới thiệu sản phẩm
+- Proof (5 giây): testimonial hoặc stats
+- CTA (2 giây): kêu gọi hành động
+Format: [thời gian] - nội dung - hướng dẫn hình ảnh/video</code></pre>
+
+      <h3>5. Chiến lược marketing</h3>
+      <pre><code>Tôi bán giày Sneaker, ngân sách marketing 5M/tháng,
+khách hàng mục tiêu: nam 18-30 tuổi, TP.HCM.
+Phân tích và gợi ý:
+1. Phân bổ ngân sách giữa Facebook, TikTok, Google
+2. Content calendar cho 1 tháng (tần suất, loại content)
+3. 3 chiến dịch flash sale đề xuất cho quý 2/2026
+4. Cách retarget khách đã xem nhưng chưa mua</code></pre>
+
+      <h2>So sánh: Tự viết vs Dùng GPT-5.4</h2>
+      <table>
+        <tr><th>Task</th><th>Tự viết</th><th>Dùng GPT-5.4</th><th>Tiết kiệm</th></tr>
+        <tr><td>20 caption/tuần</td><td>3-4 tiếng</td><td>30-45 phút</td><td>~3 tiếng</td></tr>
+        <tr><td>Phân tích 100 bình luận</td><td>1-2 tiếng</td><td>10 phút</td><td>~1.5 tiếng</td></tr>
+        <tr><td>Lên ý tưởng content 1 tháng</td><td>2-3 tiếng</td><td>15 phút</td><td>~2.5 tiếng</td></tr>
+        <tr><td>Viết email marketing</td><td>30-60 phút</td><td>5-10 phút</td><td>~30 phút</td></tr>
+        <tr><td>Tổng/tuần</td><td>~10 tiếng</td><td>~2 tiếng</td><td>~8 tiếng</td></tr>
+      </table>
+      <p><strong>Tiết kiệm: 8 giờ/tuần × 4 tuần = 32 giờ/tháng = 4 ngày làm việc!</strong></p>
+
+      <h2>Tối ưu chi phí cho team marketing</h2>
+      <p>Một team marketing 3 người:</p>
+      <ul>
+        <li><strong>Tuyển thêm nhân viên content:</strong> 8-10M/tháng</li>
+        <li><strong>Dùng GPT-5.4 (Business – 500K/tháng):</strong> Đủ cho cả team, không giới hạn requests</li>
+        <li><strong>Tiết kiệm:</strong> ~8-10M/tháng</li>
+      </ul>
+
+      <h2>Các lỗi thường gặp khi dùng GPT cho marketing</h2>
+      <p><strong>Lỗi 1:</strong> Copy-paste nguyên văn không chỉnh sửa</p>
+      <p>→ LUÔN edit lại trước khi đăng. GPT viết nhanh nhưng chưa chắc đã phù hợp với brand voice của bạn.</p>
+
+      <p><strong>Lỗi 2:</strong> Dùng prompt quá chung chung</p>
+      <p>→ Càng chi tiết, kết quả càng tốt. Thay vì "viết caption", hãy nói "viết caption 200 từ, tone vui vẻ, có 2 emoji, CTA là link sản phẩm".</p>
+
+      <p><strong>Lỗi 3:</strong> Không kiểm tra thông tin sản phẩm</p>
+      <p>→ GPT có thể "bịa" thông tin giá, khuyến mãi. LUÔN verify trước khi đăng.</p>
+
+      <h2>Bắt đầu với 80K/tháng</h2>
+      <p>Với gói Starter 80K/tháng, bạn có đủ cho:</p>
+      <ul>
+        <li>1 content creator làm việc toàn thời gian</li>
+        <li>~3,000-5,000 prompt/tháng</li>
+        <li>Viết content, phân tích data, lên ý tưởng không giới hạn</li>
+      </ul>
+      <p>Nếu team lớn hơn (3-5 người), nâng lên gói Pro (200K/tháng) hoặc Business (500K/tháng).</p>
+    `,
+  },
+  {
+    id: 14,
+    slug: "key-gpt-54-cho-freelancer-cong-so-tu-do-tai-chinh",
+    category: "non-tech",
+    categoryLabel: "Mọi ngành",
+    categoryColor: "bg-amber-100 text-amber-700",
+    categoryBg: "bg-amber-50",
+    title: "Key GPT-5.4 cho Freelancer: Làm việc tự do nhưng thu nhập 'công sở' với 80K/tháng",
+    excerpt:
+      "Freelancer có thể dùng GPT-5.4 để nhận nhiều việc hơn, làm nhanh hơn, thu nhập cao hơn. Hướng dẫn cụ thể cách dùng AI để tăng gấp đôi, gấp ba năng suất freelance – chi phí chỉ 80K/tháng.",
+    readTime: "7 phút",
+    views: 2678,
+    date: "12/03/2026",
+    featured: false,
+    image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&q=80",
+    content: `
+      <h2>Tại sao freelancer nên dùng GPT-5.4?</h2>
+      <p>Freelancer được trả tiền theo kết quả. Làm càng nhiều việc trong thời gian ngắn = thu nhập càng cao. GPT-5.4 là "nhân viên ảo" giúp bạn:</p>
+      <ul>
+        <li>Viết nhanh hơn – Tiết kiệm 50% thời gian mỗi task</li>
+        <li>Chất lượng đồng đều – Không bị ảnh hưởng bởi mood, fatigue</li>
+        <li>Đa năng hơn – Nhận được nhiều loại job khác nhau</li>
+        <li>Không cần assistant – Tự làm được công việc của 2-3 người</li>
+      </ul>
+
+      <h2>GPT-5.4 cho từng ngành freelance</h2>
+
+      <h3>1. Content Writer / Copywriter</h3>
+      <p><strong>Trước đây:</strong> Viết 1 bài 1000 từ = 3-4 tiếng. Mỗi ngày được 2-3 bài.</p>
+      <p><strong>Với GPT-5.4:</strong></p>
+      <ul>
+        <li>Research outline: 5 phút</li>
+        <li>Viết draft: 15-20 phút</li>
+        <li>Edit và finalize: 10-15 phút</li>
+        <li><strong>Tổng: 30-40 phút/bài → Mỗi ngày được 5-7 bài!</strong></li>
+      </ul>
+      <p><strong>Thu nhập:</strong> Từ 5-8 triệu/tháng → 15-25 triệu/tháng</p>
+
+      <h3>2. Translator</h3>
+      <p><strong>Trước đây:</strong> Dịch 1000 từ = 2-3 tiếng. Mỗi ngày được 3000-5000 từ.</p>
+      <p><strong>Với GPT-5.4:</strong></p>
+      <ul>
+        <li>Dịch draft: 2-3 phút cho 1000 từ</li>
+        <li>Review và chỉnh sửa: 30-45 phút cho 1000 từ</li>
+        <li><strong>Tổng: 35-50 phút cho 1000 từ → Gấp 3-4 lần năng suất!</strong></li>
+      </ul>
+      <p><strong>Thu nhập:</strong> Từ 8-12 triệu/tháng → 25-40 triệu/tháng</p>
+
+      <h3>3. Social Media Manager</h3>
+      <p><strong>Trước đây:</strong> Quản lý 3-4 Fanpage = bận rộn cả ngày.</p>
+      <p><strong>Với GPT-5.4:</strong></p>
+      <ul>
+        <li>Lên content calendar 1 tháng: 1 tiếng (thay vì 1 ngày)</li>
+        <li>Viết caption: 2-3 phút/bài</li>
+        <li>Phản hồi khách: Tự động hóa 80% câu hỏi thường gặp</li>
+        <li>Viết báo cáo: 10 phút thay vì 2-3 tiếng</li>
+      </ul>
+      <p><strong>Thu nhập:</strong> Quản lý được 8-10 Fanpage cùng lúc (mỗi page 3-5M/tháng) = <strong>25-50 triệu/tháng</strong></p>
+
+      <h3>4. Designer (có dùng AI hỗ trợ)</h3>
+      <p><strong>Với GPT-5.4:</strong></p>
+      <ul>
+        <li>Brief với khách: Dùng AI để định hướng concept nhanh</li>
+        <li>Viết mô tả (prompt) cho design AI: Tiết kiệm thời gian mockup</li>
+        <li>Viết content đi kèm design: Không cần thuê copywriter riêng</li>
+        <li>Phản hồi khách hàng: Nhanh chóng và chuyên nghiệp</li>
+      </ul>
+
+      <h3>5. Virtual Assistant / Admin Support</h3>
+      <p><strong>Với GPT-5.4:</strong></p>
+      <ul>
+        <li>Soạn email, tài liệu: 5-10 phút thay vì 30-60 phút</li>
+        <li>Tóm tắt cuộc họp: Tự động</li>
+        <li>Lên lịch, reminder: Kết hợp với app quản lý</li>
+        <li>Research thông tin: Nhanh gấp 5 lần</li>
+      </ul>
+      <p><strong>Thu nhập:</strong> Từ 10-15 triệu/tháng → 20-30 triệu/tháng</p>
+
+      <h2>ROI (Return on Investment) của 80K/tháng</h2>
+      <p>Với chi phí 80K/tháng cho GPT-5.4:</p>
+      <ul>
+        <li><strong>Content writer:</strong> Tiết kiệm 2-3 tiếng/ngày × 30 ngày = 60-90 tiếng/tháng
+          <br/>→ Nếu rate 50K/giờ = <strong>3-4.5 triệu giá trị</strong></li>
+        <li><strong>Translator:</strong> Năng suất tăng 3-4 lần
+          <br/>→ Thu nhập tăng từ 8M → 25M = <strong>+17 triệu/tháng</strong></li>
+        <li><strong>Social media manager:</strong> Quản lý được nhiều hơn
+          <br/>→ Thu nhập tăng từ 12M → 30M = <strong>+18 triệu/tháng</strong></li>
+      </ul>
+      <p><strong>ROI: 80K đầu tư → Thu về 3-18 triệu mỗi tháng. Lợi nhuận gấp 40-200 lần!</strong></p>
+
+      <h2>Prompt mẫu cho freelancer</h2>
+      <pre><code>Role: Bạn là một content writer chuyên nghiệp với 5 năm kinh nghiệm.
+Task: Viết bài blog 1000 từ cho ngành nội thất.
+Audience: Chủ nhà 30-45 tuổi, quan tâm thiết kế hiện đại.
+Tone: Thân thiện, chuyên nghiệp, có personality.
+Requirements:
+- 1 hook mạnh ở đầu bài
+- 3-5 subheadings
+- Mỗi đoạn 3-4 câu
+- Include 2-3 ví dụ thực tế
+- Kết thúc bằng CTA
+Format: Markdown</code></pre>
+
+      <h2>Tips để tối đa hóa giá trị</h2>
+      <ol>
+        <li><strong>Học cách viết prompt tốt:</strong> Prompt càng chi tiết, kết quả càng tốt. Đây là kỹ năng xứng đáng đầu tư thời gian học.</li>
+        <li><strong>Không dùng nguyên kết quả:</strong> Luôn edit, bổ sung, cá nhân hóa trước khi deliver cho khách.</li>
+        <li><strong>Build prompt library:</strong> Lưu lại những prompt tốt nhất cho từng loại job. Lần sau chỉ cần điều chỉnh.</li>
+        <li><strong>Batch work:</strong> Viết 10 prompt cùng lúc, để GPT xử lý trong khi bạn làm việc khác.</li>
+        <li><strong>Upsell với AI:</strong> Báo khách rằng bạn dùng AI để làm nhanh hơn → Giảm thời gian, có thể nhận thêm job khác.</li>
+      </ol>
+
+      <h2>Kết luận</h2>
+      <p><strong>80K/tháng</strong> cho GPT-5.4 là khoản đầu tư rẻ nhất mà freelancer có thể làm. ROI thực tế có thể gấp <strong>40-200 lần</strong>. Nếu bạn đang freelance mà chưa dùng AI, bạn đang tự bỏ tiền vào túi khách hàng.</p>
+    `,
+  },
 ];
 
 const categoryIcons: Record<string, React.ElementType> = {
