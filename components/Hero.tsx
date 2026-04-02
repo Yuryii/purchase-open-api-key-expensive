@@ -3,6 +3,10 @@
 import { useEffect, useRef } from "react";
 import { ArrowRight, Star, ShieldCheck, Clock, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
+import pricingConfig from "@/config/pricing.json";
+
+const formatPrice = (price: number) =>
+  price.toLocaleString("vi-VN");
 
 const trustBadges = [
   { icon: Star, label: "500+ người dùng" },

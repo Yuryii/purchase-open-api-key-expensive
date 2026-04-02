@@ -2,11 +2,20 @@
 
 import { useEffect, useRef } from "react";
 import { Check, Zap, ArrowRight, Shield } from "lucide-react";
+import pricingConfig from "@/config/pricing.json";
+
+const discountPercent = Math.round(
+  (1 - pricingConfig.sellPrice / pricingConfig.originalPrice) * 100
+);
+const firstInstallPrice = Math.round(
+  pricingConfig.sellPrice * (1 - pricingConfig.firstInstallDiscount / 100)
+);
+
+const formatPrice = (price: number) =>
+  price.toLocaleString("vi-VN");
 
 const plan = {
   name: "Gói API Key",
-  price: "80.000",
-  period: "tháng",
   features: [
     "GPT-5.4 & Codex-5.3",
     "Không giới hạn request/tháng",
@@ -51,10 +60,10 @@ export default function Pricing() {
                 Bảng giá
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-secondary-800 mb-4">
-                Giá chỉ từ <span className="gradient-text">80K/tháng</span>
+                Giá chỉ từ <span className="gradient-text">{formatPrice(pricingConfig.sellPrice / 1000)}K/tháng</span>
               </h2>
               <p className="text-lg text-secondary-500 max-w-xl mx-auto">
-                Giá gốc 100K/tháng – Đang giảm 20%. Không phí ẩn, không chia
+                Giá gốc {formatPrice(pricingConfig.originalPrice)}K/tháng – Đang giảm {discountPercent}%. Không phí ẩn, không chia
                 gói.
               </p>
             </div>
@@ -71,25 +80,25 @@ export default function Pricing() {
                 <div className="flex items-center justify-center gap-3 mt-4">
                   <div className="flex items-center gap-2">
                     <span className="text-3xl lg:text-4xl font-bold text-secondary-400 line-through">
-                      100.000
+                      {formatPrice(pricingConfig.originalPrice / 1000)}K
                     </span>
                     <span className="text-5xl lg:text-6xl font-extrabold text-primary-600">
-                      {plan.price}
+                      {formatPrice(pricingConfig.sellPrice / 1000)}K
                     </span>
                   </div>
                   <div className="text-left">
                     <span className="text-secondary-400 text-lg font-semibold block">
                       VNĐ
                     </span>
-                    <span className="text-secondary-400 text-sm">/tháng</span>
+                    <span className="text-secondary-400 text-sm">/{pricingConfig.period}</span>
                   </div>
                 </div>
-                <div className="flex items-center justify-center gap-2 mt-3">
+                <div className="flex items-center justify-center gap-2 mt-3 flex-wrap">
                   <span className="bg-red-100 text-red-600 text-sm font-bold px-3 py-1 rounded-full">
-                    Giảm 20%
+                    Giảm {discountPercent}%
                   </span>
                   <span className="bg-accent-100 text-accent-700 text-sm font-bold px-4 py-1.5 rounded-full">
-                    Giảm 15% lần đầu cài đặt
+                    Giảm {pricingConfig.firstInstallDiscount}% lần đầu ({formatPrice(firstInstallPrice / 1000)}K)
                   </span>
                 </div>
               </div>

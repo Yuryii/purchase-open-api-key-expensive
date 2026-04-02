@@ -1,0 +1,7 @@
+{
+  "originalPrice": 200000,
+  "sellPrice": 150000,
+  "period": "tháng",
+  "firstInstallDiscount": 15,
+  "referralDiscount": 10
+}
