@@ -45,15 +45,15 @@ export default function Hero() {
             <div className="text-center lg:text-left">
               <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-semibold mb-6 animate-bounce-slow">
                 <Sparkles className="w-4 h-4" />
-                <span>Giảm 15% lần đầu cài đặt!</span>
+                <span>Giảm {pricingConfig.firstInstallDiscount}% lần đầu cài đặt!</span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-secondary-800 leading-tight mb-6">
                 Trải nghiệm{" "}
-                <span className="gradient-text">GPT-5.4 & Codex-5.3</span>{" "}
+                <span className="gradient-text">GPT-5.4 &amp; Codex-5.3</span>{" "}
                 không giới hạn
                 <br />
-                <span className="text-primary-600">Chỉ 80K/tháng</span>
+                <span className="text-primary-600">Chỉ {formatPrice(pricingConfig.sellPrice / 1000)}K/{pricingConfig.period}</span>
               </h1>
 
               <p className="text-lg sm:text-xl text-secondary-500 leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
@@ -66,7 +66,7 @@ export default function Hero() {
                   href="/mua-hang"
                   className="btn-primary text-base px-8 py-4 rounded-xl shadow-lg shadow-primary-600/25"
                 >
-                  Mua ngay – 80K
+                  Mua ngay – {formatPrice(pricingConfig.sellPrice / 1000)}K
                   <ArrowRight className="w-5 h-5" />
                 </a>
                 <a

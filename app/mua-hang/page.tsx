@@ -12,6 +12,10 @@ import {
   Clock,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import pricingConfig from "@/config/pricing.json";
+
+const formatPrice = (price: number) =>
+  price.toLocaleString("vi-VN");
 
 const steps = [
   {
@@ -43,7 +47,7 @@ const steps = [
     icon: CheckCircle,
     title: "Thanh toán & Xác nhận",
     description:
-      "Chuyển khoản 80.000 VNĐ/tháng, sau đó nhắn tin theo cú pháp \"Tên đăng ký + Đã Thanh toán\" vào nhóm Zalo để admin cấp token và hướng dẫn sử dụng.",
+      "Thanh toán " + formatPrice(pricingConfig.sellPrice) + " VNĐ/tháng, sau đó nhắn tin theo cú pháp \"Tên đăng ký + Đã Thanh toán\" vào nhóm Zalo để admin cấp token và hướng dẫn sử dụng.",
     link: null,
     linkText: null,
     color: "bg-green-500",
@@ -68,7 +72,7 @@ const highlights = [
   {
     icon: Zap,
     label: "Giá cố định",
-    value: "80K/tháng",
+    value: `${formatPrice(pricingConfig.sellPrice / 1000)}K/${pricingConfig.period}`,
     desc: "Không phí ẩn, không chia gói",
   },
   {
