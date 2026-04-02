@@ -6,7 +6,6 @@ import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import Comparison from "@/components/Comparison";
 import UseCases from "@/components/UseCases";
-import Integrations from "@/components/Integrations";
 import TrustGuarantee from "@/components/TrustGuarantee";
 import InstallationGuide from "@/components/InstallationGuide";
 import FAQ from "@/components/FAQ";
@@ -25,7 +24,6 @@ export default function Home() {
         <Testimonials />
         <Comparison />
         <UseCases />
-        <Integrations />
         <TrustGuarantee />
         <InstallationGuide />
         <FAQ />
