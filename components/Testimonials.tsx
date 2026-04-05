@@ -42,7 +42,7 @@ const testimonials = [
     avatar: "LD",
     avatarBg: "bg-amber-500",
     content:
-      "Dùng Codex-5.3 để viết Python script xử lý dữ liệu. Tốc độ nhanh, context window dài, không giới hạn request như các gói khác. Giá 150K thì quá rẻ so với giá trị mang lại.",
+      "Dùng Codex-5.3 để viết Python script xử lý dữ liệu. Tốc độ nhanh, context window dài, không giới hạn request như các gói khác. Giá 180K thì quá rẻ so với giá trị mang lại.",
     rating: 5,
   },
   {

@@ -142,7 +142,7 @@ export default function UseCases() {
           <div className="section-fade opacity-0 text-center mt-12">
             <p className="text-secondary-500 text-sm">
               Và còn rất nhiều trường hợp sử dụng khác — dùng không giới hạn, giá chỉ{" "}
-              <strong className="text-primary-600">150K/tháng</strong>
+              <strong className="text-primary-600">180K/tháng</strong>
             </p>
           </div>
         </div>

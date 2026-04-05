@@ -169,7 +169,7 @@ const response = await fetch("https://api.openclaw.vn/v1/chat", {
       <p>Ứng dụng chatbot của bạn xử lý 100,000 request/tháng, mỗi request ~500 tokens:</p>
       <ul>
         <li><strong>OpenAI gốc:</strong> 100K × 500 = 50M tokens → ~$500 + phí Visa + phí USD ≈ <strong>$550-600</strong></li>
-        <li><strong>OpenClaw:</strong> 50M tokens × quy đổi = ~<strong>150K VND</strong> (~$6)</li>
+        <li><strong>OpenClaw:</strong> 50M tokens × quy đổi = ~<strong>180K VND</strong> (~$6)</li>
       </ul>
       <p><em>Tiết kiệm: ~97% chi phí + không mất thời gian setup</em></p>
     `,
@@ -337,9 +337,9 @@ async function sendMessage(userMessage: string) {
     categoryLabel: "Tin tức AI",
     categoryColor: "bg-purple-100 text-purple-700",
     categoryBg: "bg-purple-50",
-    title: "Key GPT-5.4 chỉ 150K/tháng – Chỉ bằng 4 ly cà phê, bạn có cả tháng AI không giới hạn",
+    title: "Key GPT-5.4 chỉ 180K/tháng – Chỉ bằng 4 ly cà phê, bạn có cả tháng AI không giới hạn",
     excerpt:
-      "Trong khi nhiều người Việt phải chi 500-800K mỗi tháng cho thẻ Visa để dùng OpenAI, giờ đây chỉ cần 150K VND là bạn có đầy đủ GPT-5.4, Codex, và hỗ trợ tiếng Việt 24/7. Sự thật đằng sau con số này.",
+      "Trong khi nhiều người Việt phải chi 500-800K mỗi tháng cho thẻ Visa để dùng OpenAI, giờ đây chỉ cần 180K VND là bạn có đầy đủ GPT-5.4, Codex, và hỗ trợ tiếng Việt 24/7. Sự thật đằng sau con số này.",
     readTime: "6 phút",
     views: 5623,
     date: "25/03/2026",
@@ -356,11 +356,11 @@ async function sendMessage(userMessage: string) {
       </ul>
       <p>Kết quả: Mỗi tháng bạn có thể tốn <strong>500K - 800K VND</strong> chỉ để duy trì quyền truy cập, chưa kể chi phí sử dụng thực tế.</p>
 
-      <h2>Giải pháp: Key GPT-5.4 chỉ 150K/tháng</h2>
+      <h2>Giải pháp: Key GPT-5.4 chỉ 180K/tháng</h2>
       <p>OpenClaw VN cung cấp API key GPT-5.4 với mức giá <strong>chỉ 150,000 VND/tháng</strong>. Đây là cách nó hoạt động:</p>
       <table>
         <tr><th>Tiêu chí</th><th>OpenAI gốc</th><th>OpenClaw VN</th></tr>
-        <tr><td>Chi phí hàng tháng</td><td>500K - 800K VND</td><td><strong>150K VND</strong></td></tr>
+        <tr><td>Chi phí hàng tháng</td><td>500K - 800K VND</td><td><strong>180K VND</strong></td></tr>
         <tr><td>Phí thẻ Visa</td><td>600K-1.2M VND/năm</td><td>Không cần</td></tr>
         <tr><td>Phí chuyển đổi USD</td><td>3-5% mỗi lần</td><td>0%</td></tr>
         <tr><td>Thanh toán</td><td>Visa/MasterCard</td><td>Chuyển khoản, Momo, Zalo</td></tr>
@@ -368,8 +368,8 @@ async function sendMessage(userMessage: string) {
       </table>
       <p><strong>Tiết kiệm: ~500-600K mỗi tháng = 6-7 triệu/năm</strong></p>
 
-      <h2>150K/tháng thì dùng được gì?</h2>
-      <p>Với 150K/tháng, bạn nhận được:</p>
+      <h2>180K/tháng thì dùng được gì?</h2>
+      <p>Với 180K/tháng, bạn nhận được:</p>
       <ul>
         <li><strong>GPT-5.4 không giới hạn</strong> – Model mới nhất, mạnh nhất của OpenAI</li>
         <li><strong>Codex-5.3</strong> – Hỗ trợ lập trình 50+ ngôn ngữ</li>
@@ -382,7 +382,7 @@ async function sendMessage(userMessage: string) {
       <p>Ví dụ: Ứng dụng chatbot của bạn phục vụ 1,000 khách hàng/ngày, mỗi khách hỏi 5 câu:</p>
       <ul>
         <li><strong>OpenAI gốc:</strong> 1,000 × 5 × 30 = 150,000 câu hỏi/tháng × 50 tokens = 7.5M tokens → <strong>$75 (~1.8M VND)</strong> + phí Visa + phí USD = <strong>2-3M/tháng</strong></li>
-        <li><strong>OpenClaw VN:</strong> Cùng lượng usage = <strong>150K/tháng</strong> (có thể nâng cấp gói cao hơn nếu cần)</li>
+        <li><strong>OpenClaw VN:</strong> Cùng lượng usage = <strong>180K/tháng</strong> (có thể nâng cấp gói cao hơn nếu cần)</li>
       </ul>
       <p><em>Tiết kiệm: ~1.5-2 triệu/tháng cho một ứng dụng vừa và nhỏ</em></p>
 
@@ -399,11 +399,11 @@ async function sendMessage(userMessage: string) {
       <p>Bạn chỉ cần:</p>
       <ol>
         <li>Liên hệ qua Zalo: <strong>0xxx xxx xxx</strong> (xem trang Mua hàng)</li>
-        <li>Chuyển khoản 150K qua Momo hoặc ngân hàng</li>
+        <li>Chuyển khoản 180K qua Momo hoặc ngân hàng</li>
         <li>Nhận API key qua Zalo trong vòng 5 phút</li>
         <li>Cài đặt và bắt đầu sử dụng ngay</li>
       </ol>
-      <p><strong>Không cần thẻ Visa. Không cần VPN. Không cần tài khoản quốc tế. Chỉ cần 150K và Zalo.</strong></p>
+      <p><strong>Không cần thẻ Visa. Không cần VPN. Không cần tài khoản quốc tế. Chỉ cần 180K và Zalo.</strong></p>
     `,
   },
   {
@@ -415,7 +415,7 @@ async function sendMessage(userMessage: string) {
     categoryBg: "bg-purple-50",
     title: "Tổng hợp các gói GPT-5.4 API OpenClaw 2026: Bảng giá chi tiết & so sánh",
     excerpt:
-      "Bảng giá đầy đủ các gói API GPT-5.4 của OpenClaw VN năm 2026. Từ gói 150K cho đến gói Enterprise không giới hạn. Biết chính xác mình cần gói nào.",
+      "Bảng giá đầy đủ các gói API GPT-5.4 của OpenClaw VN năm 2026. Từ gói 180K cho đến gói Enterprise không giới hạn. Biết chính xác mình cần gói nào.",
     readTime: "5 phút",
     views: 3841,
     date: "22/03/2026",
@@ -429,7 +429,7 @@ async function sendMessage(userMessage: string) {
       <h2>Bảng giá các gói GPT-5.4 API OpenClaw 2026</h2>
       <table>
         <tr><th>Gói</th><th>Giá/tháng</th><th>GPT-5.4 nano</th><th>GPT-5.4 mini</th><th>GPT-5.4 full</th><th>Codex-5.3</th></tr>
-        <tr><td><strong>API Key</strong></td><td>150K VND</td><td>Không giới hạn</td><td>50K requests</td><td>5K requests</td><td>10K requests</td></tr>
+        <tr><td><strong>API Key</strong></td><td>180K VND</td><td>Không giới hạn</td><td>50K requests</td><td>5K requests</td><td>10K requests</td></tr>
         <tr><td><strong>Pro</strong></td><td>200K VND</td><td>Không giới hạn</td><td>200K requests</td><td>20K requests</td><td>50K requests</td></tr>
         <tr><td><strong>Business</strong></td><td>500K VND</td><td>Không giới hạn</td><td>Không giới hạn</td><td>100K requests</td><td>200K requests</td></tr>
         <tr><td><strong>Enterprise</strong></td><td>Liên hệ</td><td>Không giới hạn</td><td>Không giới hạn</td><td>Không giới hạn</td><td>Không giới hạn</td></tr>
@@ -437,7 +437,7 @@ async function sendMessage(userMessage: string) {
 
       <h2>Nên chọn gói nào?</h2>
 
-      <h3>Gói API Key – 150K/tháng – Phù hợp: Cá nhân, học tập</h3>
+      <h3>Gói API Key – 180K/tháng – Phù hợp: Cá nhân, học tập</h3>
       <p>Bạn mới bắt đầu, muốn trải nghiệm GPT-5.4 hoặc dùng cho nhu cầu cá nhân:</p>
       <ul>
         <li>Học sinh/sinh viên – Viết essay, dịch thuật, hỗ trợ học tập</li>
@@ -473,7 +473,7 @@ async function sendMessage(userMessage: string) {
       <p>Với <strong>OpenClaw Pro (200K/tháng = 2.4M/năm)</strong>, bạn tiết kiệm được <strong>80-95% chi phí</strong>.</p>
 
       <h2>FAQ thường gặp</h2>
-      <p><strong>Hỏi: Gói API Key 150K có đủ cho ứng dụng production không?</strong></p>
+      <p><strong>Hỏi: Gói API Key 180K có đủ cho ứng dụng production không?</strong></p>
       <p>Trả: Đủ cho ứng dụng nhỏ, prototype, hoặc dùng cá nhân. Nếu ứng dụng phát triển, bạn có thể nâng cấp lên Pro hoặc Business bất kỳ lúc nào.</p>
 
       <p><strong>Hỏi: Có giới hạn số API key không?</strong></p>
@@ -490,9 +490,9 @@ async function sendMessage(userMessage: string) {
     categoryLabel: "Mọi ngành",
     categoryColor: "bg-amber-100 text-amber-700",
     categoryBg: "bg-amber-50",
-    title: "Key GPT-5.4 cho shop bán hàng: Chatbot tư vấn khách 24/7 chỉ với 150K/tháng",
+    title: "Key GPT-5.4 cho shop bán hàng: Chatbot tư vấn khách 24/7 chỉ với 180K/tháng",
     excerpt:
-      "Bạn bán hàng online, mệt mỏi với việc trả lời tin nhắn lúc đêm khuya? GPT-5.4 API giá 150K/tháng có thể thay bạn tư vấn khách 24/7. Cách setup đơn giản không cần biết code.",
+      "Bạn bán hàng online, mệt mỏi với việc trả lời tin nhắn lúc đêm khuya? GPT-5.4 API giá 180K/tháng có thể thay bạn tư vấn khách 24/7. Cách setup đơn giản không cần biết code.",
     readTime: "7 phút",
     views: 2956,
     date: "20/03/2026",
@@ -520,10 +520,10 @@ async function sendMessage(userMessage: string) {
       </ul>
 
       <h2>Chi phí cực kỳ rẻ</h2>
-      <p>Với key GPT-5.4 giá <strong>150K/tháng</strong> từ OpenClaw VN:</p>
+      <p>Với key GPT-5.4 giá <strong>180K/tháng</strong> từ OpenClaw VN:</p>
       <table>
         <tr><th>Tiêu chí</th><th>Tuyển nhân viên</th><th>GPT-5.4 Chatbot</th></tr>
-        <tr><td>Lương/tháng</td><td>5-8M VND</td><td>150K VND</td></tr>
+        <tr><td>Lương/tháng</td><td>5-8M VND</td><td>180K VND</td></tr>
         <tr><td>Thời gian làm việc</td><td>8-10 giờ/ngày</td><td>24/7</td></tr>
         <tr><td>Số khách tư vấn/ngày</td><td>20-30</td><td>Không giới hạn</td></tr>
         <tr><td>Nghỉ phép, thôi việc</td><td>Có thể</td><td>Không bao giờ</td></tr>
@@ -538,7 +538,7 @@ async function sendMessage(userMessage: string) {
       <h3>Option 1: Kết nối với Fanpage/Zalo (không cần code)</h3>
       <p>Nhiều nền tảng chatbot như Chatfuel, Manychat, hoặc giải pháp Việt Nam như Subiz, Base đã tích hợp OpenClaw API:</p>
       <ol>
-        <li>Mua key GPT-5.4 tại OpenClaw VN (150K/tháng)</li>
+        <li>Mua key GPT-5.4 tại OpenClaw VN (180K/tháng)</li>
         <li>Đăng ký tài khoản trên nền tảng chatbot (có gói miễn phí)</li>
         <li>Kết nối Fanpage/Zalo với nền tảng chatbot</li>
         <li>Cấu hình OpenClaw API key vào nền tảng</li>
@@ -579,8 +579,8 @@ const response = await fetch('https://api.openclaw.vn/v1/chat/completions', {
       <p><strong>Hỏi: Khách hàng có biết đang chat với AI không?</strong></p>
       <p>Trả: Bạn nên để chatbot xưng "em" như nhân viên thật. Khách hàng hiếm khi nhận ra. Nếu muốn minh bạch, có thể để tin đầu: "Dạ em là trợ lý AI của shop ABC ạ 😊"</p>
 
-      <p><strong>Hỏi: 150K/tháng thì chatbot trả lời được bao nhiêu khách?</strong></p>
-      <p>Trả: 150K/tháng đủ cho khoảng 3,000-5,000 câu hỏi từ khách. Nếu shop lớn hơn, nâng lên gói Pro (200K/tháng) là đủ.</p>
+      <p><strong>Hỏi: 180K/tháng thì chatbot trả lời được bao nhiêu khách?</strong></p>
+      <p>Trả: 180K/tháng đủ cho khoảng 3,000-5,000 câu hỏi từ khách. Nếu shop lớn hơn, nâng lên gói Pro (200K/tháng) là đủ.</p>
     `,
   },
   {
@@ -592,7 +592,7 @@ const response = await fetch('https://api.openclaw.vn/v1/chat/completions', {
     categoryBg: "bg-amber-50",
     title: "Key GPT-5.4 cho giáo viên, sinh viên, giảng viên: Công cụ hỗ trợ giảng dạy và học tập với chi phí học sinh",
     excerpt:
-      "GPT-5.4 có thể giúp giáo viên soạn giáo án nhanh hơn, sinh viên viết bài tốt hơn, giảng viên nghiên cứu hiệu quả hơn. Tất cả với chi phí chỉ 150K/tháng – phù hợp với túi tiền sinh viên.",
+      "GPT-5.4 có thể giúp giáo viên soạn giáo án nhanh hơn, sinh viên viết bài tốt hơn, giảng viên nghiên cứu hiệu quả hơn. Tất cả với chi phí chỉ 180K/tháng – phù hợp với túi tiền sinh viên.",
     readTime: "8 phút",
     views: 2156,
     date: "18/03/2026",
@@ -656,18 +656,18 @@ const response = await fetch('https://api.openclaw.vn/v1/chat/completions', {
       <p>"Tìm 5 nguồn tham khảo uy tín về Machine Learning trong y khoa"</p>
 
       <h2>Chi phí cho sinh viên</h2>
-      <p>Với <strong>150K/tháng</strong>, sinh viên có:</p>
+      <p>Với <strong>180K/tháng</strong>, sinh viên có:</p>
       <ul>
         <li>GPT-5.4 không giới hạn – Hỏi bao nhiêu tùy ý</li>
         <li>Codex-5.3 – Hỗ trợ code cho các môn lập trình</li>
-        <li>Tất cả tính năng của bản API Key – Chỉ với giá 150K/tháng</li>
+        <li>Tất cả tính năng của bản API Key – Chỉ với giá 180K/tháng</li>
       </ul>
-      <p>So với việc mua tài liệu, thuê gia sư (200-500K/buổi), <strong>150K/tháng là mức giá "sinh viên" nhất</strong> để tiếp cận AI.</p>
+      <p>So với việc mua tài liệu, thuê gia sư (200-500K/buổi), <strong>180K/tháng là mức giá "sinh viên" nhất</strong> để tiếp cận AI.</p>
 
       <h2>Cách bắt đầu</h2>
       <ol>
         <li>Liên hệ Zalo để mua key (báo là sinh viên để được tư vấn gói phù hợp)</li>
-        <li>Chuyển khoản 150K</li>
+        <li>Chuyển khoản 180K</li>
         <li>Nhận API key qua Zalo trong 5 phút</li>
         <li>Truy cập dashboard để bắt đầu sử dụng</li>
         <li>Có thể dùng trên điện thoại qua Zalo chatbot hoặc website</li>
@@ -690,7 +690,7 @@ const response = await fetch('https://api.openclaw.vn/v1/chat/completions', {
     categoryLabel: "Mọi ngành",
     categoryColor: "bg-amber-100 text-amber-700",
     categoryBg: "bg-amber-50",
-    title: "Key GPT-5.4 cho Marketing & Content Creator: Viết content viral với chi phí 150K/tháng",
+    title: "Key GPT-5.4 cho Marketing & Content Creator: Viết content viral với chi phí 180K/tháng",
     excerpt:
       "Marketer và content creator có thể dùng GPT-5.4 để viết caption, lên ý tưởng, phân tích data trong vài giây. Hướng dẫn chi tiết cách sử dụng GPT-5.4 cho công việc marketing hiệu quả nhất.",
     readTime: "9 phút",
@@ -783,8 +783,8 @@ Phân tích và gợi ý:
       <p><strong>Lỗi 3:</strong> Không kiểm tra thông tin sản phẩm</p>
       <p>→ GPT có thể "bịa" thông tin giá, khuyến mãi. LUÔN verify trước khi đăng.</p>
 
-      <h2>Bắt đầu với 150K/tháng</h2>
-      <p>Với gói API Key 150K/tháng, bạn có đủ cho:</p>
+      <h2>Bắt đầu với 180K/tháng</h2>
+      <p>Với gói API Key 180K/tháng, bạn có đủ cho:</p>
       <ul>
         <li>1 content creator làm việc toàn thời gian</li>
         <li>~5,000-10,000 prompt/tháng</li>
@@ -800,9 +800,9 @@ Phân tích và gợi ý:
     categoryLabel: "Mọi ngành",
     categoryColor: "bg-amber-100 text-amber-700",
     categoryBg: "bg-amber-50",
-    title: "Key GPT-5.4 cho Freelancer: Làm việc tự do nhưng thu nhập 'công sở' với 150K/tháng",
+    title: "Key GPT-5.4 cho Freelancer: Làm việc tự do nhưng thu nhập 'công sở' với 180K/tháng",
     excerpt:
-      "Freelancer có thể dùng GPT-5.4 để nhận nhiều việc hơn, làm nhanh hơn, thu nhập cao hơn. Hướng dẫn cụ thể cách dùng AI để tăng gấp đôi, gấp ba năng suất freelance – chi phí chỉ 150K/tháng.",
+      "Freelancer có thể dùng GPT-5.4 để nhận nhiều việc hơn, làm nhanh hơn, thu nhập cao hơn. Hướng dẫn cụ thể cách dùng AI để tăng gấp đôi, gấp ba năng suất freelance – chi phí chỉ 180K/tháng.",
     readTime: "7 phút",
     views: 2678,
     date: "12/03/2026",
@@ -871,8 +871,8 @@ Phân tích và gợi ý:
       </ul>
       <p><strong>Thu nhập:</strong> Từ 10-15 triệu/tháng → 20-30 triệu/tháng</p>
 
-      <h2>ROI (Return on Investment) của 150K/tháng</h2>
-      <p>Với chi phí 150K/tháng cho GPT-5.4:</p>
+      <h2>ROI (Return on Investment) của 180K/tháng</h2>
+      <p>Với chi phí 180K/tháng cho GPT-5.4:</p>
       <ul>
         <li><strong>Content writer:</strong> Tiết kiệm 2-3 tiếng/ngày × 30 ngày = 60-90 tiếng/tháng
           <br/>→ Nếu rate 50K/giờ = <strong>3-4.5 triệu giá trị</strong></li>
@@ -881,7 +881,7 @@ Phân tích và gợi ý:
         <li><strong>Social media manager:</strong> Quản lý được nhiều hơn
           <br/>→ Thu nhập tăng từ 12M → 30M = <strong>+18 triệu/tháng</strong></li>
       </ul>
-      <p><strong>ROI: 150K đầu tư → Thu về 3-18 triệu mỗi tháng. Lợi nhuận gấp 20-120 lần!</strong></p>
+      <p><strong>ROI: 180K đầu tư → Thu về 3-18 triệu mỗi tháng. Lợi nhuận gấp 20-120 lần!</strong></p>
 
       <h2>Prompt mẫu cho freelancer</h2>
       <pre><code>Role: Bạn là một content writer chuyên nghiệp với 5 năm kinh nghiệm.
@@ -906,7 +906,7 @@ Format: Markdown</code></pre>
       </ol>
 
       <h2>Kết luận</h2>
-      <p><strong>150K/tháng</strong> cho GPT-5.4 là khoản đầu tư rẻ nhất mà freelancer có thể làm. ROI thực tế có thể gấp <strong>20-120 lần</strong>. Nếu bạn đang freelance mà chưa dùng AI, bạn đang tự bỏ tiền vào túi khách hàng.</p>
+      <p><strong>180K/tháng</strong> cho GPT-5.4 là khoản đầu tư rẻ nhất mà freelancer có thể làm. ROI thực tế có thể gấp <strong>20-120 lần</strong>. Nếu bạn đang freelance mà chưa dùng AI, bạn đang tự bỏ tiền vào túi khách hàng.</p>
     `,
   },
 ];
@@ -1150,7 +1150,7 @@ export default function Blog() {
               Bạn đã sẵn sàng trải nghiệm GPT-5.4?
             </h2>
             <p className="text-white/80 mb-8 max-w-lg mx-auto">
-              Mua API key OpenClaw ngay hôm nay – chỉ 150K/tháng, hỗ trợ cài
+              Mua API key OpenClaw ngay hôm nay – chỉ 180K/tháng, hỗ trợ cài
               đặt miễn phí, thanh toán VNĐ.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
